@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@theme {
+    --color-brand-text: #6fffe9; 
+    --color-brand-bg: #0b132b; 
+    --color-brand-primary: #5bc0be; 
+    --color-brand-secondary: #3a506b; 
+    --color-brand-accent: #B8F3FF;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    background-color: var(--color-brand-bg);
+    color: var(--color-brand-text);
+}
