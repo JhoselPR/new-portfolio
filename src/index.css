@@ -2,6 +2,8 @@
 
 @theme {
     --color-brand-text: #6fffe9; 
+    --color-brand-text-secondary: #ccd6f6;
+    --color-green-bright: #64ffda;
     --color-brand-bg: #0b132b; 
     --color-brand-primary: #5bc0be; 
     --color-brand-secondary: #3a506b; 
@@ -11,5 +13,9 @@
 body {
     font-family: "Outfit", sans-serif;
     background-color: var(--color-brand-bg);
-    color: var(--color-brand-text);
+    color: var(--color-brand-text-secondary);
+}
+
+html {
+  scroll-behavior: smooth;
 }

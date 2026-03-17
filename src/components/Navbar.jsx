@@ -1,7 +1,12 @@
 import { useTranslation } from "react-i18next"
+import { useActiveSection } from "../hooks/useActiveSection"
+
+const sections = ["home", "about", "experience", "projects"]
 
 export default function Navbar() {
   const { t, i18n } = useTranslation()
+  const activeSection = useActiveSection(sections)
+  const currentLang = i18n.language || "es"
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng)
@@ -14,35 +19,37 @@ export default function Navbar() {
   ]
 
   return (
-    <header className="w-full px-10 py-4">
-
+    <header className="w-full px-20 py-4 fixed top-0 left-0 shadow z-50 bg-[03001cb3] backdrop-blur-sm scroll-mt-24">
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
-        <a href="#" className="inline-block text-2xl transition-transform duration-300 hover:scale-105">Jhosel Ruiz</a>
+        <div className="flex items-center gap-6">
+          <a href="#" className="inline-block text-xl transition-transform duration-300 hover:scale-105 font-semibold">Jhosel Ruiz</a>
+          {sections.map((section) => (
+            <a
+              key={section}
+              href={`#${section}`}
+              className={"inline-block text-sm hover:scale-105 transition-all duration-300 " + (activeSection === section ? "text-green-bright font-medium" : "")}
+            >
+              {t(`navbar.${section}`)}
+            </a>
+          ))}
+        </div>
 
-        <div>
-        {["about", "experience", "projects"].map((section) => (
-          <a
-            key={section}
-            href={`#${section}`}
-            className="inline-block px-4 py-2 text-sm transition-transform duration-300 hover:scale-105"
+        <div className="flex items-center gap-2">
+          <button
+          type="button"
+          onClick={() => changeLanguage("en")}
+          className={`px-3 py-1 rounded-md ${currentLang === "en" ? "bg-green-bright text-black" : "bg-gray-700 text-white"}`}
           >
-            {t(`navbar.${section}`)}
-          </a>
-        ))}
-
-          <div className="inline-block relative">
-            <div className="absolute right-0 mt-2 w-32 bg-whie border rounded shadow-lg">
-              {languages.map((lang) => (
-                <button
-                  key={lang.code}
-                  onClick={() => changeLanguage(lang.code)}
-                  className="block w-full text-left px-4 py-2 text-sm "
-                >
-                  {lang.label}
-                </button>
-              ))}
-            </div>
-          </div>
+            EN
+          </button>
+          /
+          <button
+          type="button"
+          onClick={() => changeLanguage("es")}
+          className={`px-3 py-1 rounded-md ${currentLang === "es" ? "bg-green-bright text-black" : "bg-gray-700 text-white"}`}
+          >
+            ES
+          </button>
         </div>
       </nav>
     </header>
