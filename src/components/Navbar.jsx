@@ -1,57 +1,222 @@
-import { useTranslation } from "react-i18next"
-import { useActiveSection } from "../hooks/useActiveSection"
+import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { useActiveSection } from "../hooks/useActiveSection";
+import { FaLinkedin } from "react-icons/fa";
+import { IoMail, IoLogoGithub } from "react-icons/io5";
+import { HiMenu, HiX } from "react-icons/hi";
+import { motion, AnimatePresence } from "framer-motion";
 
-const sections = ["home", "about", "experience", "projects"]
+const sections = ["home", "about", "experience", "projects"];
 
 export default function Navbar() {
-  const { t, i18n } = useTranslation()
-  const activeSection = useActiveSection(sections)
-  const currentLang = i18n.language || "es"
+  const { t, i18n } = useTranslation();
+  const activeSection = useActiveSection(sections);
+  const currentLang = i18n.language || "es";
+
+  const [isOpen, setIsOpen] = useState(false);
 
   const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng)
-    document.documentElement.lang = lng
-  }
+    i18n.changeLanguage(lng);
+    document.documentElement.lang = lng;
+  };
 
-  const languages = [
-    { code: "en", label: "EN" },
-    { code: "es", label: "ES" },
-  ]
+  // bloquear scroll
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
+  }, [isOpen]);
 
   return (
-    <header className="w-full px-20 py-4 fixed top-0 left-0 shadow z-50 bg-[03001cb3] backdrop-blur-sm scroll-mt-24">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between">
+    <header className="w-full px-10 py-4 fixed top-0 left-0 shadow z-50 bg-[03001cb3] backdrop-blur-sm border-b border-border/30">
+      <nav className="max-w-7xl mx-auto flex items-center justify-between text-text-accent">
+        {/* IZQUIERDA (NO TOCAR) */}
         <div className="flex items-center gap-6">
-          <a href="#" className="inline-block text-xl transition-transform duration-300 hover:scale-105 font-semibold">Jhosel Ruiz</a>
-          {sections.map((section) => (
-            <a
-              key={section}
-              href={`#${section}`}
-              className={"inline-block text-sm hover:scale-105 transition-all duration-300 " + (activeSection === section ? "text-green-bright font-medium" : "")}
-            >
-              {t(`navbar.${section}`)}
-            </a>
-          ))}
+          <a
+            href="#"
+            className="inline-block text-xl transition-transform duration-300 hover:scale-105 font-semibold"
+          >
+            Jhosel Ruiz
+          </a>
+
+          <div className="hidden md:flex items-center gap-6">
+            {sections.map((section) => (
+              <a
+                key={section}
+                href={`#${section}`}
+                className={
+                  "inline-block text-sm hover:scale-105 transition-all duration-300 " +
+                  (activeSection === section
+                    ? "border-b font-medium text-text-secondary"
+                    : "")
+                }
+              >
+                {t(`navbar.${section}`)}
+              </a>
+            ))}
+          </div>
         </div>
 
-        <div className="flex items-center gap-2">
-          <button
-          type="button"
-          onClick={() => changeLanguage("en")}
-          className={`px-3 py-1 rounded-md ${currentLang === "en" ? "bg-green-bright text-black" : "bg-gray-700 text-white"}`}
-          >
-            EN
-          </button>
-          /
-          <button
-          type="button"
-          onClick={() => changeLanguage("es")}
-          className={`px-3 py-1 rounded-md ${currentLang === "es" ? "bg-green-bright text-black" : "bg-gray-700 text-white"}`}
-          >
-            ES
-          </button>
+        {/* DERECHA (NO TOCAR EN DESKTOP) */}
+        <div className="hidden md:flex gap-6 items-center">
+          <div className="flex items-center gap-3">
+            <a
+              href="https://www.linkedin.com/in/jhosel"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="w-5 h-auto hover:scale-105 hover:text-text-secondary transition-transform duration-300 text-text-primary" />
+            </a>
+            <a
+              href="https://github.com/jhosel"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IoLogoGithub className="w-5 h-auto hover:scale-105 hover:text-text-secondary transition-transform duration-300 text-text-primary" />{" "}
+            </a>
+            <a
+              href="mailto:felix.jhosel@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IoMail className="w-5 h-auto hover:scale-105 hover:text-text-secondary transition-transform duration-300 text-text-primary" />
+            </a>
+          </div>
+
+          <div className="flex gap-2 text-[15px]">
+            <button
+              onClick={() => changeLanguage("en")}
+              className={`cursor-pointer ${currentLang === "en" ? "border-b font-medium text-text-secondary" : ""}`}
+            >
+              EN
+            </button>
+            /
+            <button
+              onClick={() => changeLanguage("es")}
+              className={`cursor-pointer ${currentLang === "es" ? "border-b font-medium text-text-secondary" : ""}`}
+            >
+              ES
+            </button>
+          </div>
         </div>
+
+        {/* MOBILE BUTTON */}
+        <button className="md:hidden z-50" onClick={() => setIsOpen(!isOpen)}>
+          <AnimatePresence mode="wait">
+            {isOpen ? (
+              <motion.div
+                key="close"
+                initial={{ rotate: -90, opacity: 0 }}
+                animate={{ rotate: 0, opacity: 1 }}
+                exit={{ rotate: 90, opacity: 0 }}
+                transition={{ duration: 0.2 }}
+              >
+                <HiX size={28} />
+              </motion.div>
+            ) : (
+              <motion.div
+                key="menu"
+                initial={{ rotate: 90, opacity: 0 }}
+                animate={{ rotate: 0, opacity: 1 }}
+                exit={{ rotate: -90, opacity: 0 }}
+                transition={{ duration: 0.2 }}
+              >
+                <HiMenu size={28} />
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </button>
       </nav>
+
+      {/* OVERLAY */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            className="fixed inset-0 md:hidden"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setIsOpen(false)}
+          />
+        )}
+      </AnimatePresence>
+
+      {/* MOBILE MENU */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ y: -20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -20, opacity: 0 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            className="md:hidden absolute top-full left-0 w-full backdrop-blur-lg bg-bg-primary border-b border-border/40 shadow-lg"
+          >
+            <div className="flex flex-col items-center py-6 gap-6">
+              {/* Sections */}
+              <div className="flex flex-col items-center gap-5">
+                {sections.map((section) => (
+                  <a
+                    key={section}
+                    href={`#${section}`}
+                    onClick={() => setIsOpen(false)}
+                    className={
+                      "inline-block text-base hover:scale-105 transition-all duration-300 " +
+                      (activeSection === section
+                        ? "border-b font-medium text-text-secondary"
+                        : "")
+                    }
+                  >
+                    {t(`navbar.${section}`)}
+                  </a>
+                ))}
+              </div>
+
+              {/* Divider */}
+              <div className="w-2/3 border-t border-border/30" />
+
+              {/* Social */}
+              <div className="flex items-center gap-5">
+                <a
+                  href="https://www.linkedin.com/in/jhosel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin className="w-5 h-auto hover:scale-105 hover:text-text-secondary transition-transform duration-300 text-text-primary" />
+                </a>
+                <a
+                  href="https://github.com/jhosel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <IoLogoGithub className="w-5 h-auto hover:scale-105 hover:text-text-secondary transition-transform duration-300 text-text-primary" />{" "}
+                </a>
+                <a
+                  href="mailto:felix.jhosel@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <IoMail className="w-5 h-auto hover:scale-105 hover:text-text-secondary transition-transform duration-300 text-text-primary" />
+                </a>
+              </div>
+
+              {/* Language */}
+              <div className="flex gap-3 text-base">
+                <button
+                  onClick={() => changeLanguage("en")}
+                  className={`cursor-pointer ${currentLang === "en" ? "border-b font-medium text-text-secondary" : ""}`}
+                >
+                  EN
+                </button>
+                /
+                <button
+                  onClick={() => changeLanguage("es")}
+                  className={`cursor-pointer ${currentLang === "es" ? "border-b font-medium text-text-secondary" : ""}`}
+                >
+                  ES
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
-  )
+  );
 }
