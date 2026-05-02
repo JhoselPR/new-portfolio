@@ -9,8 +9,14 @@
     },
     "home": {
       "greeting": "¡Hola! Soy",
-      "description": "Desarrollador de software apasionado por crear soluciones innovadoras y eficientes.",
+      "description": "Desarrollador de software enfocado en frontend, creando experiencias web rápidas e intuitivas. Impulsado por el código limpio, el rendimiento y los detalles que hacen que una interfaz se sienta bien.",
       "cta": "¡Contáctame!"
+    },
+    "about": {
+      "title": "Sobre mí",
+      "description": "Empecé en el desarrollo por curiosidad y encontré en el frontend el equilibrio entre lógica y experiencia de usuario. Hoy, mi enfoque está en entender y construir software más allá de la interfaz.",
+      "subtitle": "Con lo que he trabajado:",
+      "ending": "Fuera de programar, disfruto los videojuegos (especialmente Minecraft), armar hardware como teclados personalizados y PCs, y jugar ajedrez."
     }
   }
 }

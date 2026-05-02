@@ -9,8 +9,14 @@
     },
     "home": {
       "greeting": "Hello! I'm",
-      "description": "A passionate software developer dedicated to creating innovative and efficient solutions.",
+      "description": "Frontend-focused software developer building fast, intuitive web experiences. Driven by clean code, performance, and the details that make interfaces feel right.",
       "cta": "Contact Me!"
+    },
+    "about": {
+      "title": "About Me",
+      "description": "I started in development out of curiosity and found in frontend the balance between logic and user experience. Today, my focus is on understanding and building software beyond the interface.",
+      "subtitle": "What I’ve worked with:",
+      "ending": "Outside of coding, I enjoy video games (especially Minecraft), building hardware like custom keyboards and PCs, and playing chess."
     }
   }
 }
