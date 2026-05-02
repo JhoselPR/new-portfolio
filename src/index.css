@@ -1,21 +1,40 @@
 @import "tailwindcss";
 
 @theme {
-    --color-brand-text: #6fffe9; 
+    --color-brand-text: #6fffe9;
     --color-brand-text-secondary: #ccd6f6;
     --color-green-bright: #64ffda;
-    --color-brand-bg: #0b132b; 
-    --color-brand-primary: #5bc0be; 
-    --color-brand-secondary: #3a506b; 
+    --color-brand-bg: #0b132b;
+    --color-brand-primary: #5bc0be;
+    --color-brand-secondary: #3a506b;
     --color-brand-accent: #B8F3FF;
+
+
+    /* Base */
+    --color-bg-primary: #0b132b;
+    --color-bg-secondary: #111a3a;
+
+    /* Texto */
+    --color-text-primary: #ccd6f6;
+    --color-text-secondary: #6fffe9;
+    --color-text-accent: #B8F3FF;
+
+    /* Brand / Accent */
+    --color-accent-primary: #64ffda;
+    --color-accent-hover: #6fffe9;
+    --color-accent-secondary: #5bc0be;
+
+    /* UI */
+    --color-border: #9290C3;
+    --color-border-secondary: #7f9cf5;
 }
 
 body {
     font-family: "Outfit", sans-serif;
-    background-color: var(--color-brand-bg);
-    color: var(--color-brand-text-secondary);
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
