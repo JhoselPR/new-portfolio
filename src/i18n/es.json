@@ -1,11 +1,16 @@
 {
-    "translation": {
-        "navbar": {
-            "home": "Inicio",
-            "about": "Sobre mí",
-            "experience": "Experiencia",
-            "projects": "Proyectos",
-            "contact": "Contacto"
-        }
+  "translation": {
+    "navbar": {
+      "home": "Inicio",
+      "about": "Sobre mí",
+      "experience": "Experiencia",
+      "projects": "Proyectos",
+      "contact": "Contacto"
+    },
+    "home": {
+      "greeting": "¡Hola! Soy",
+      "description": "Desarrollador de software apasionado por crear soluciones innovadoras y eficientes.",
+      "cta": "¡Contáctame!"
     }
+  }
 }

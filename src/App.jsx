@@ -10,7 +10,7 @@ function App() {
     <>
       <Navbar />
 
-      <main>
+      <main className="px-10 max-w-7xl mx-auto">
         <Section id="home">
           <Home />
         </Section>

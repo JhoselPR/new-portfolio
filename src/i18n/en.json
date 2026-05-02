@@ -1,11 +1,16 @@
 {
-    "translation": {
-        "navbar": {
-            "home": "Home",
-            "about": "About",
-            "experience": "Experience",
-            "projects": "Projects",
-            "contact": "Contact"
-        }
+  "translation": {
+    "navbar": {
+      "home": "Home",
+      "about": "About",
+      "experience": "Experience",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "home": {
+      "greeting": "Hello! I'm",
+      "description": "A passionate software developer dedicated to creating innovative and efficient solutions.",
+      "cta": "Contact Me!"
     }
+  }
 }

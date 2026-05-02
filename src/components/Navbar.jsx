@@ -4,6 +4,7 @@ import { useActiveSection } from "../hooks/useActiveSection";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMail, IoLogoGithub } from "react-icons/io5";
 import { HiMenu, HiX } from "react-icons/hi";
+import { TbFileCvFilled } from "react-icons/tb";
 import { motion, AnimatePresence } from "framer-motion";
 
 const sections = ["home", "about", "experience", "projects"];
@@ -26,7 +27,7 @@ export default function Navbar() {
   }, [isOpen]);
 
   return (
-    <header className="w-full px-10 py-4 fixed top-0 left-0 shadow z-50 bg-[03001cb3] backdrop-blur-sm border-b border-border/30">
+    <header className="w-full px-15 py-4 fixed top-0 left-0 shadow z-50 bg-[03001cb3] backdrop-blur-sm border-b border-border/30">
       <nav className="max-w-7xl mx-auto flex items-center justify-between text-text-accent">
         {/* IZQUIERDA (NO TOCAR) */}
         <div className="flex items-center gap-6">
@@ -78,6 +79,13 @@ export default function Navbar() {
               rel="noopener noreferrer"
             >
               <IoMail className="w-5 h-auto hover:scale-105 hover:text-text-secondary transition-transform duration-300 text-text-primary" />
+            </a>
+            <a
+              href="/files/CV_FJPR.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <TbFileCvFilled className="w-5 h-auto hover:scale-105 hover:text-text-secondary transition-transform duration-300 text-text-primary" />
             </a>
           </div>
 
@@ -194,6 +202,13 @@ export default function Navbar() {
                   rel="noopener noreferrer"
                 >
                   <IoMail className="w-5 h-auto hover:scale-105 hover:text-text-secondary transition-transform duration-300 text-text-primary" />
+                </a>
+                <a
+                  href="/files/CV_FJPR.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <TbFileCvFilled className="w-5 h-auto hover:scale-105 hover:text-text-secondary transition-transform duration-300 text-text-primary" />
                 </a>
               </div>
 
