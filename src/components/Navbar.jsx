@@ -44,9 +44,9 @@ export default function Navbar() {
                 key={section}
                 href={`#${section}`}
                 className={
-                  "inline-block text-sm hover:scale-105 transition-all duration-300 " +
+                  "inline-block text-sm hover:scale-105 hover:text-text-secondary transition-all duration-300 " +
                   (activeSection === section
-                    ? "border-b font-medium text-text-secondary"
+                    ? "border-b border-text-secondary font-medium text-text-secondary"
                     : "")
                 }
               >
