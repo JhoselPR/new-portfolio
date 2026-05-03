@@ -67,7 +67,7 @@ export default function Navbar() {
               <FaLinkedin className="w-5 h-auto hover:scale-105 hover:text-text-secondary transition-transform duration-300 text-text-primary" />
             </a>
             <a
-              href="https://github.com/jhosel"
+              href="https://github.com/jhoselpr"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -15,7 +15,7 @@ export default function Experience() {
     <section className="pt-10">
       <SectionTitle title={t("experience.title")} />
 
-      <div className="flex flex-col md:flex-row mt-8 gap-4 mt-12">
+      <div className="flex flex-col md:flex-row mt-8 gap-4 mt-15">
         {/* Tabs */}
         <div className="flex md:flex-col border-b md:border-b-0 md:border-r border-border/30 overflow-x-auto">
           {experience.map((item, index) => {
