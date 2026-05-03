@@ -18,6 +18,8 @@
     --color-text-primary: #ccd6f6;
     --color-text-secondary: #6fffe9;
     --color-text-accent: #B8F3FF;
+    --color-text-muted: #8892b0;
+    --color-text-darker: #8892b0;
 
     /* Brand / Accent */
     --color-accent-primary: #64ffda;

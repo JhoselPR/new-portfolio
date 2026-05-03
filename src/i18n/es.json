@@ -17,6 +17,40 @@
       "description": "Empecé en el desarrollo por curiosidad y encontré en el frontend el equilibrio entre lógica y experiencia de usuario. Hoy, mi enfoque está en entender y construir software más allá de la interfaz.",
       "subtitle": "Con lo que he trabajado:",
       "ending": "Fuera de programar, disfruto los videojuegos (especialmente Minecraft), armar hardware como teclados personalizados y PCs, y jugar ajedrez."
+    },
+    "experience": {
+      "title": "Experiencia",
+      "items": {
+        "grupo_salinas": {
+          "company": "Grupo Salinas",
+          "position": "Desarrollador Frontend",
+          "date": "Ene 2025 - Presente",
+          "description": [
+            "Diseñé y desarrollé multiples aplicaciones React utilizadas por miles de colaboradores dentro del ecosistema corporativo.",
+            "Colaboré con equipos de backend, diseño y producto para implementar nuevas funcionalidades y mejorar la experiencia del usuario.",
+            "Elevé la calidad visual de los productos mediante design system y optimicé el rendimiento de las aplicaciones."
+          ]
+        },
+        "generation": {
+          "company": "Generation México",
+          "position": "Desarrollador Full Stack",
+          "date": "2024 - 2025",
+          "description": [
+            "Desarrollé un e-commerce completo utilizando React, Java y MySQL como proyecto final, demostrando habilidades en frontend y backend.",
+            "Construí APIs RESTful con Java Spring Boot para manejar la lógica de negocio y la persistencia de datos.",
+            "Implementé la metodología ágil en proyectos grupales, colaborando efectivamente con compañeros para entregar soluciones de software de alta calidad."
+          ]
+        },
+        "sodvi": {
+          "company": "SODVI",
+          "position": "Desarrollador de videojuegos",
+          "date": "2022 - 2023",
+          "description": [
+            "Coordiné un equipo de desarrollo como Project Manager, asegurando la entrega oportuna de proyectos y manteniendo una comunicación efectiva entre los miembros del equipo.",
+            "Desarrollé multiples videojuegos, desde la conceptualización hasta la implementación, utilizando Unity y C#."
+          ]
+        }
+      }
     }
   }
 }

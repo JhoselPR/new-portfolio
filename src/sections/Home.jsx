@@ -7,15 +7,14 @@ export default function Home() {
 
   return (
     <section
-      id="home"
-      className="h-screen flex items-center justify-center"
+      className="flex items-center justify-center h-screen"
     >
-      <div className="flex flex-col md:flex-row gap-10 md:gap-2 items-center -mt-25 sm:-mt-10 md:mt-0">
+      <div className="flex flex-col md:flex-row gap-10 md:gap-6 items-center -mt-25 sm:-mt-10 md:mt-0">
         <AsciiPortrait />
-        <div className="flex flex-col gap-4 text-center md:text-left max-w-xl">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl text-text-accent">
+        <div className="flex flex-col gap-4 md:gap-6 text-center md:text-left max-w-xl">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl text-text-accent leading-relaxed">
             {t("home.greeting")}
-            <span className="text-text-secondary"> Jhosel.</span>
+            <span className="text-text-secondary font-semibold"> Jhosel</span>.
           </h1>
           <p className="sm:text-lg text-text-primary mt-2 whitespace-pre-line leading-loose">
             {t("home.description")}

@@ -5,26 +5,27 @@ export default function About() {
   const { t, i18n } = useTranslation();
 
   return (
-    <section className="">
+    <section className="pt-10">
       <SectionTitle title={t("about.title")} />
       <div className="flex flex-col-reverse items-center md:flex-row pt-10 md:pt-20 gap-5 md:gap-20">
         <article>
-          <p className="text-lg text-text-primary mt-4 whitespace-pre-line leading-relaxed">
+          <p className="md:text-lg text-text-primary mt-4 whitespace-pre-line leading-loose">
             {t("about.description")}
           </p>
-          <p className="text-lg text-text-secondary font-semibold mt-4 whitespace-pre-line leading-realaxed">
+
+          <p className="md:text-lg text-text-secondary font-semibold mt-8 whitespace-pre-line leading-realaxed">
             {t("about.subtitle")}
           </p>
 
-            <ul className="list-[circle] marker:text-text-secondary list-inside mt-2 grid grid-cols-2 sm:grid-cols-1 gap-1">
-                <li className="text-text-primary">JavaScript/TypeScript</li>
-                <li className="text-text-primary">React</li>
-                <li className="text-text-primary">Node.js</li>
-                <li className="text-text-primary">Java</li>
-                <li className="text-text-primary">SQL/NoSQL databases</li>
-            </ul>
+          <ul className="list-[circle] marker:text-text-secondary list-inside mt-2 grid grid-cols-2 sm:grid-cols-1 gap-1 font-light text-sm md:text-base leading-relaxed">
+            <li>JavaScript / TypeScript</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Java</li>
+            <li>SQL/NoSQL databases</li>
+          </ul>
 
-          <p className="text-lg text-text-primary mt-4 whitespace-pre-line leading-relaxed">
+          <p className="md:text-lg mt-8 whitespace-pre-line leading-loose">
             {t("about.ending")}
           </p>
         </article>

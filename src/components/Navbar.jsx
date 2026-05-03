@@ -28,7 +28,7 @@ export default function Navbar() {
 
   return (
     <header className="w-full px-15 py-4 fixed top-0 left-0 shadow z-50 bg-[03001cb3] backdrop-blur-sm border-b border-border/30">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between text-text-accent">
+      <nav className="max-w-6xl mx-auto flex items-center justify-between text-text-accent">
         {/* IZQUIERDA (NO TOCAR) */}
         <div className="flex items-center gap-6">
           <a

@@ -17,6 +17,40 @@
       "description": "I started in development out of curiosity and found in frontend the balance between logic and user experience. Today, my focus is on understanding and building software beyond the interface.",
       "subtitle": "What I’ve worked with:",
       "ending": "Outside of coding, I enjoy video games (especially Minecraft), building hardware like custom keyboards and PCs, and playing chess."
+    },
+    "experience": {
+      "title": "Experience",
+      "items": {
+        "grupo_salinas": {
+          "company": "Grupo Salinas",
+          "position": "Frontend Developer",
+          "date": "Jan 2025 - Present",
+          "description": [
+            "Designed and developed multiple React applications used by thousands of collaborators within the corporate ecosystem.",
+            "Collaborated with backend, design, and product teams to implement new features and improve user experience.",
+            "Elevated the visual quality of products through design systems and optimized application performance."
+          ]
+        },
+        "generation": {
+          "company": "Generation México",
+          "position": "Full Stack Developer",
+          "date": "2024 - 2025",
+          "description": [
+            "Developed a full e-commerce application using React, Java, and MySQL as a final project, demonstrating skills in both frontend and backend.",
+            "Built RESTful APIs with Java Spring Boot to handle business logic and data persistence.",
+            "Implemented agile methodology in group projects, effectively collaborating with peers to deliver high-quality software solutions."
+          ]
+        },
+        "sodvi": {
+          "company": "SODVI",
+          "position": "Game Developer",
+          "date": "2022 - 2023",
+          "description": [
+            "Coordinated a development team as Project Manager, ensuring timely delivery of projects and maintaining effective communication among team members.",
+            "Developed multiple video games, from conceptualization to implementation, using Unity and C#."
+          ]
+        }
+      }
     }
   }
 }

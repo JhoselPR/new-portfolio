@@ -8,7 +8,7 @@ export default function Section({ id, children }) {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: true, margin: "-100px" }}
-      className="min-h-screen scroll-mt-24"
+      className="scroll-mt-28 min-h-screen"
     >
       {children}
     </motion.section>
