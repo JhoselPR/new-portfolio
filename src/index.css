@@ -1,42 +1,59 @@
 @import "tailwindcss";
 
 @theme {
-    --color-brand-text: #6fffe9;
-    --color-brand-text-secondary: #ccd6f6;
-    --color-green-bright: #64ffda;
-    --color-brand-bg: #0b132b;
-    --color-brand-primary: #5bc0be;
-    --color-brand-secondary: #3a506b;
-    --color-brand-accent: #B8F3FF;
+  --color-bg-primary: #07122a;
+  --color-bg-secondary: #151f37;
+  --color-surface-high: #1f2942;
+  --color-surface-high-2: #2a344e;
+  --color-text-primary: #d9e2ff;
+  --color-text-secondary: #bacac3;
+  --color-text-muted: #8892b0;
+  --color-text-accent: #d9e2ff;
+  --color-text-darker: #8892b0;
+  --color-accent-primary: #64ffda;
+  --color-accent-hover: #38debb;
+  --color-brand-secondary: #8892b0;
+  --color-border: #1d2d50;
+  --color-border-secondary: #2a344e;
+  --color-border-stealth: #1d2d50;
+
+  --font-family-sans: "Outfit", sans-serif;
+  --font-family-mono: "JetBrains Mono", monospace;
+  --font-title: "Space Grotesk", sans-serif;
 
 
-    /* Base */
-    --color-bg-primary: #0b132b;
-    --color-bg-secondary: #111a3a;
-
-    /* Texto */
-    --color-text-primary: #ccd6f6;
-    --color-text-secondary: #6fffe9;
-    --color-text-accent: #B8F3FF;
-    --color-text-muted: #8892b0;
-    --color-text-darker: #8892b0;
-
-    /* Brand / Accent */
-    --color-accent-primary: #64ffda;
-    --color-accent-hover: #6fffe9;
-    --color-accent-secondary: #5bc0be;
-
-    /* UI */
-    --color-border: #9290C3;
-    --color-border-secondary: #7f9cf5;
 }
 
 body {
-    font-family: "Outfit", sans-serif;
-    background-color: var(--color-bg-primary);
-    color: var(--color-text-primary);
+  font-family: var(--font-family-sans);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  background-image:
+    radial-gradient(circle at 92% 4%, rgba(73, 193, 255, 0.1), transparent 24%),
+    radial-gradient(circle at 84% 8%, rgba(33, 78, 143, 0.14), transparent 30%);
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+.glass-card {
+  background: linear-gradient(180deg, rgba(31, 41, 66, 0.75) 0%, rgba(21, 31, 55, 0.68) 100%);
+  border: 1px solid var(--color-border-stealth);
+  backdrop-filter: blur(14px);
+  box-shadow: inset 0 1px 0 rgba(217, 226, 255, 0.04);
+}
+
+.cyan-glow {
+  position: relative;
+}
+
+.cyan-glow::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(circle at top right, rgba(100, 255, 218, 0.2), transparent 48%);
+  opacity: 0.6;
 }

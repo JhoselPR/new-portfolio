@@ -51,6 +51,51 @@
           ]
         }
       }
+    },
+    "projects": {
+      "title": "Proyectos",
+      "subtitle": "Una selección de proyectos enfocados en frontend, con foco en design systems, performance y calidad de producto.",
+      "items": {
+        "design_system": {
+          "label": "Design System",
+          "title": "Base de UI escalable para apps empresariales",
+          "description": "Diseñé y documenté componentes reutilizables, tokens de color y primitives de layout para mantener consistencia visual entre múltiples productos React.",
+          "stack": ["React", "TypeScript", "Storybook", "Figma Tokens"]
+        },
+        "analytics_dashboard": {
+          "label": "Data UX",
+          "title": "Dashboard analítico operacional",
+          "description": "Construí una experiencia de dashboard modular con gráficos responsivos, vistas por rol y navegación fluida para reducir fricción en flujos internos diarios.",
+          "stack": ["React", "Vite", "TanStack Query", "Recharts"]
+        },
+        "commerce_frontend": {
+          "label": "E-commerce",
+          "title": "Storefront orientado a conversión",
+          "description": "Implementé una UI moderna de storefront con jerarquía visual clara, interacciones rápidas y módulos reutilizables enfocados en conversión y usabilidad.",
+          "stack": ["React", "Tailwind", "Node API", "MySQL"]
+        },
+        "devtools_ui": {
+          "label": "Developer Tooling",
+          "title": "Interfaz de flujo inspirada en IDE",
+          "description": "Prototipé una interfaz técnica inspirada en patrones de IDE, con navegación compacta, interacciones pensadas para teclado y comunicación clara de estados.",
+          "stack": ["React", "Framer Motion", "CSS Grid", "i18next"]
+        },
+        "landing_performance": {
+          "label": "Performance",
+          "title": "Landing de alto rendimiento",
+          "description": "Entregué una landing pulida optimizada para rendimiento en lighthouse, accesibilidad y comportamiento responsive en mobile y desktop.",
+          "stack": ["Vite", "React", "Lazy Loading", "A11y"]
+        }
+      }
+    },
+    "contact": {
+      "title": "Contacto",
+      "description": "Si tenés un desafío interesante de frontend, una idea de producto o una colaboración en mente, hablemos.",
+      "cta": "Enviarme un email"
+    },
+    "footer": {
+      "rights": "© 2026 Jhosel Ruiz. Todos los derechos reservados.",
+      "built": "Construido con React, Vite y mucha atención al detalle."
     }
   }
 }

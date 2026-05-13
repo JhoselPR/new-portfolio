@@ -4,13 +4,16 @@ import Home from "./sections/Home";
 import About from "./sections/About";
 import Section from "./components/Section";
 import Experience from "./sections/Experience";
+import Projects from "./sections/Projects";
+import Contact from "./sections/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
       <Navbar />
 
-      <main className="px-10 md:px-15 max-w-6xl mx-auto">
+      <main className="px-6 md:px-10 lg:px-12 max-w-[1200px] mx-auto">
         <Section id="home">
           <Home />
         </Section>
@@ -24,11 +27,15 @@ function App() {
         </Section>
 
         <Section id="projects">
-          <section className="flex items-center justify-center">
-            Projects
-          </section>
+          <Projects />
+        </Section>
+
+        <Section id="contact">
+          <Contact />
         </Section>
       </main>
+
+      <Footer />
     </>
   );
 }

@@ -7,7 +7,7 @@ import { HiMenu, HiX } from "react-icons/hi";
 import { TbFileCvFilled } from "react-icons/tb";
 import { motion, AnimatePresence } from "framer-motion";
 
-const sections = ["home", "about", "experience", "projects"];
+const sections = ["home", "about", "experience", "projects", "contact"];
 
 export default function Navbar() {
   const { t, i18n } = useTranslation();
@@ -27,13 +27,13 @@ export default function Navbar() {
   }, [isOpen]);
 
   return (
-    <header className="w-full px-15 py-4 fixed top-0 left-0 shadow z-50 bg-[03001cb3] backdrop-blur-sm border-b border-border/30">
-      <nav className="max-w-6xl mx-auto flex items-center justify-between text-text-accent">
+    <header className={`w-full px-6 md:px-10 lg:px-12 py-4 fixed top-0 left-0 z-50 backdrop-blur-xl border-b border-border-stealth/80 ${isOpen ? "bg-bg-primary/95" : "bg-bg-primary/70"}`}>
+      <nav className="max-w-[1200px] mx-auto flex items-center justify-between text-text-primary">
         {/* IZQUIERDA (NO TOCAR) */}
         <div className="flex items-center gap-6">
           <a
             href="#"
-            className="inline-block text-xl transition-transform duration-300 hover:scale-105 font-semibold"
+            className="inline-block text-xl transition-transform duration-300 hover:scale-105 font-semibold font-title tracking-tight"
           >
             Jhosel Ruiz
           </a>
@@ -44,9 +44,9 @@ export default function Navbar() {
                 key={section}
                 href={`#${section}`}
                 className={
-                  "inline-block text-sm hover:scale-105 hover:text-text-secondary transition-all duration-300 " +
+                  "inline-block text-sm hover:scale-105 hover:text-accent-primary transition-all duration-300 font-mono " +
                   (activeSection === section
-                    ? "border-b border-text-secondary font-medium text-text-secondary"
+                    ? "border-b border-accent-primary font-medium text-accent-primary"
                     : "")
                 }
               >
@@ -64,42 +64,42 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className="w-5 h-auto hover:scale-105 hover:text-text-secondary transition-transform duration-300 text-text-primary" />
+              <FaLinkedin className="w-5 h-auto hover:scale-105 hover:text-accent-primary transition-transform duration-300 text-text-primary" />
             </a>
             <a
-              href="https://github.com/jhoselpr"
+              href="https://github.com/jhosel"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <IoLogoGithub className="w-5 h-auto hover:scale-105 hover:text-text-secondary transition-transform duration-300 text-text-primary" />{" "}
+              <IoLogoGithub className="w-5 h-auto hover:scale-105 hover:text-accent-primary transition-transform duration-300 text-text-primary" />{" "}
             </a>
             <a
               href="mailto:felix.jhosel@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <IoMail className="w-5 h-auto hover:scale-105 hover:text-text-secondary transition-transform duration-300 text-text-primary" />
+              <IoMail className="w-5 h-auto hover:scale-105 hover:text-accent-primary transition-transform duration-300 text-text-primary" />
             </a>
             <a
               href="/files/CV_FJPR.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <TbFileCvFilled className="w-5 h-auto hover:scale-105 hover:text-text-secondary transition-transform duration-300 text-text-primary" />
+              <TbFileCvFilled className="w-5 h-auto hover:scale-105 hover:text-accent-primary transition-transform duration-300 text-text-primary" />
             </a>
           </div>
 
-          <div className="flex gap-2 text-[15px]">
+          <div className="flex gap-2 text-[15px] font-mono text-text-muted">
             <button
               onClick={() => changeLanguage("en")}
-              className={`cursor-pointer ${currentLang === "en" ? "border-b font-medium text-text-secondary" : ""}`}
+              className={`cursor-pointer ${currentLang === "en" ? "border-b font-medium text-accent-primary" : ""}`}
             >
               EN
             </button>
             /
             <button
               onClick={() => changeLanguage("es")}
-              className={`cursor-pointer ${currentLang === "es" ? "border-b font-medium text-text-secondary" : ""}`}
+              className={`cursor-pointer ${currentLang === "es" ? "border-b font-medium text-accent-primary" : ""}`}
             >
               ES
             </button>
@@ -155,7 +155,7 @@ export default function Navbar() {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -20, opacity: 0 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="md:hidden absolute top-full left-0 w-full backdrop-blur-lg bg-bg-primary border-b border-border/40 shadow-lg"
+            className="md:hidden absolute top-full left-0 w-full backdrop-blur-lg bg-bg-primary/95 border-b border-border-stealth shadow-lg"
           >
             <div className="flex flex-col items-center py-6 gap-6">
               {/* Sections */}
@@ -167,8 +167,8 @@ export default function Navbar() {
                     onClick={() => setIsOpen(false)}
                     className={
                       "inline-block text-base hover:scale-105 transition-all duration-300 " +
-                      (activeSection === section
-                        ? "border-b font-medium text-text-secondary"
+                       (activeSection === section
+                        ? "border-b font-medium text-accent-primary"
                         : "")
                     }
                   >
@@ -178,7 +178,7 @@ export default function Navbar() {
               </div>
 
               {/* Divider */}
-              <div className="w-2/3 border-t border-border/30" />
+              <div className="w-2/3 border-t border-border-stealth" />
 
               {/* Social */}
               <div className="flex items-center gap-5">
@@ -187,28 +187,28 @@ export default function Navbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaLinkedin className="w-5 h-auto hover:scale-105 hover:text-text-secondary transition-transform duration-300 text-text-primary" />
+                  <FaLinkedin className="w-5 h-auto hover:scale-105 hover:text-accent-primary transition-transform duration-300 text-text-primary" />
                 </a>
                 <a
                   href="https://github.com/jhosel"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <IoLogoGithub className="w-5 h-auto hover:scale-105 hover:text-text-secondary transition-transform duration-300 text-text-primary" />{" "}
+                  <IoLogoGithub className="w-5 h-auto hover:scale-105 hover:text-accent-primary transition-transform duration-300 text-text-primary" />{" "}
                 </a>
                 <a
                   href="mailto:felix.jhosel@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <IoMail className="w-5 h-auto hover:scale-105 hover:text-text-secondary transition-transform duration-300 text-text-primary" />
+                  <IoMail className="w-5 h-auto hover:scale-105 hover:text-accent-primary transition-transform duration-300 text-text-primary" />
                 </a>
                 <a
                   href="/files/CV_FJPR.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <TbFileCvFilled className="w-5 h-auto hover:scale-105 hover:text-text-secondary transition-transform duration-300 text-text-primary" />
+                  <TbFileCvFilled className="w-5 h-auto hover:scale-105 hover:text-accent-primary transition-transform duration-300 text-text-primary" />
                 </a>
               </div>
 
@@ -216,14 +216,14 @@ export default function Navbar() {
               <div className="flex gap-3 text-base">
                 <button
                   onClick={() => changeLanguage("en")}
-                  className={`cursor-pointer ${currentLang === "en" ? "border-b font-medium text-text-secondary" : ""}`}
+                  className={`cursor-pointer ${currentLang === "en" ? "border-b font-medium text-accent-primary" : ""}`}
                 >
                   EN
                 </button>
                 /
                 <button
                   onClick={() => changeLanguage("es")}
-                  className={`cursor-pointer ${currentLang === "es" ? "border-b font-medium text-text-secondary" : ""}`}
+                  className={`cursor-pointer ${currentLang === "es" ? "border-b font-medium text-accent-primary" : ""}`}
                 >
                   ES
                 </button>

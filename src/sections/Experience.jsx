@@ -12,12 +12,12 @@ export default function Experience() {
   const data = t(`experience.items.${active.key}`, { returnObjects: true });
 
   return (
-    <section className="pt-10">
-      <SectionTitle title={t("experience.title")} />
+    <section>
+      <SectionTitle title={t("experience.title")} number="02." />
 
-      <div className="flex flex-col md:flex-row mt-8 gap-4 mt-15">
+      <div className="flex flex-col md:flex-row mt-10 md:mt-12 gap-6 md:gap-8">
         {/* Tabs */}
-        <div className="flex md:flex-col border-b md:border-b-0 md:border-r border-border/30 overflow-x-auto">
+        <div className="flex md:flex-col md:min-w-56 border-b md:border-b-0 md:border-r border-border-stealth/80 overflow-x-auto">
           {experience.map((item, index) => {
             const company = t(`experience.items.${item.key}.company`);
             const isActive = index === activeTab;
@@ -28,10 +28,10 @@ export default function Experience() {
                 className="relative px-4 py-3 text-left whitespace-nowrap"
               >
                 <span
-                  className={`relative z-10 ${
-                    isActive
-                      ? "text-text-secondary"
-                      : "text-brand-secondary hover:text-white"
+                    className={`relative z-10 font-medium ${
+                      isActive
+                        ? "text-accent-primary"
+                        : "text-text-muted hover:text-text-primary"
                   }`}
                 >
                   {company}
@@ -41,7 +41,7 @@ export default function Experience() {
                 {isActive && (
                   <motion.div
                     layoutId="activeTab"
-                    className="absolute inset-0 bg-white/5 border-accent-primary 
+                     className="absolute inset-0 bg-surface-high/35 border-accent-primary 
                        border-b-2 md:border-b-0 md:border-r-2"
                     transition={{ type: "spring", stiffness: 300, damping: 30 }}
                   />
@@ -52,7 +52,7 @@ export default function Experience() {
         </div>
 
         {/* Content */}
-        <div className="flex-1 md:pl-8 pt-6 md:pt-0">
+        <div className="flex-1 md:pl-8 pt-4 md:pt-0">
           <AnimatePresence mode="wait">
             <motion.div
               key={active.key}
@@ -61,16 +61,16 @@ export default function Experience() {
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.25 }}
             >
-              <h3 className="text-xl md:text-2xl font-semibold">
+               <h3 className="text-xl md:text-2xl font-semibold font-title">
                 {data.position}{" "}
-                <span className="text-text-secondary">- {data.company}</span>
+                <span className="text-accent-primary">- {data.company}</span>
               </h3>
 
-              <p className="text-lg text-gray-400 mt-3">{data.date}</p>
+              <p className="text-sm md:text-base text-text-muted mt-3 font-mono">{data.date}</p>
 
               <ul className="mt-6 space-y-4 list-[circle] marker:text-text-secondary list-inside">
                 {data.description.map((item, i) => (
-                  <li key={i} className="text-text-darker leading-relaxed">
+                  <li key={i} className="text-text-secondary leading-relaxed">
                     {item}
                   </li>
                 ))}
