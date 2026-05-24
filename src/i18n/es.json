@@ -54,6 +54,9 @@
     },
     "projects": {
       "title": "Proyectos",
+      "showMore": "Ver más proyectos",
+      "filtersAll": "Todos",
+      "filtersLabel": "Filtrar proyectos por tecnología",
       "subtitle": "Una selección de proyectos enfocados en frontend, con foco en design systems, performance y calidad de producto.",
       "items": {
         "1": {
@@ -63,7 +66,7 @@
           "stack": ["React", "TypeScript", "Tailwind CSS", "Supabase", "PWA"],
           "code": "",
           "deploy": "",
-          "img": ""
+          "img": "https://cdn.pixabay.com/photo/2023/09/16/18/18/wallpaper-8257343_1280.png"
         },
         "2": {
           "label": "Plataforma link in bio",

@@ -54,6 +54,9 @@
     },
     "projects": {
       "title": "Projects",
+      "showMore": "See more projects",
+      "filtersAll": "All",
+      "filtersLabel": "Filter projects by technology",
       "subtitle": "A selection of frontend-focused builds centered on design systems, performance, and product quality.",
       "items": {
         "1": {
