@@ -27,7 +27,7 @@ export default function Contact() {
           <a href="https://www.linkedin.com/in/jhosel" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="w-5 h-5 hover:text-accent-primary transition-colors" />
           </a>
-          <a href="https://github.com/jhosel" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/JhoselPR" target="_blank" rel="noopener noreferrer">
             <IoLogoGithub className="w-5 h-5 hover:text-accent-primary transition-colors" />
           </a>
           <a href="mailto:felix.jhosel@gmail.com" target="_blank" rel="noopener noreferrer">
