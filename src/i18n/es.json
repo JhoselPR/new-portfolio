@@ -64,16 +64,16 @@
           "title": "Domux",
           "description": "PWA fullstack para organizar tareas, gastos compartidos y rutinas del hogar en un solo lugar.",
           "stack": ["React", "TypeScript", "Tailwind CSS", "Supabase", "PWA"],
-          "code": "",
-          "deploy": "",
-          "img": "https://cdn.pixabay.com/photo/2023/09/16/18/18/wallpaper-8257343_1280.png"
+          "code": "https://github.com/JhoselPR/domux.git",
+          "deploy": "https://domux.vercel.app/",
+          "img": ""
         },
         "2": {
           "label": "Plataforma link in bio",
           "title": "DevTree",
           "description": "Plataforma fullstack donde desarrolladores pueden compartir proyectos, redes sociales y su presencia online desde un perfil personalizable.",
           "stack": ["MongoDB", "Express", "React", "Node.js", "TypeScript"],
-          "code": "",
+          "code": "https://github.com/JhoselPR/devtree.git",
           "deploy": "",
           "img": ""
         },
@@ -82,7 +82,7 @@
           "title": "Guess Character",
           "description": "Aplicación iOS que relaciona la personalidad del usuario con un personaje de Naruto según sus respuestas.",
           "stack": ["Swift", "iOS"],
-          "code": "",
+          "code": "https://github.com/JhoselPR/guess-character.git",
           "deploy": "",
           "img": ""
         },
@@ -91,8 +91,8 @@
           "title": "Movie Finder",
           "description": "Web para buscar películas y consultar información detallada usando una API externa.",
           "stack": ["React", "JavaScript", "External API"],
-          "code": "",
-          "deploy": "",
+          "code": "https://github.com/JhoselPR/MovieFinder.git",
+          "deploy": "https://moviefinder-jhoseldev.netlify.app/",
           "img": ""
         },
         "5": {
@@ -109,8 +109,8 @@
             "AWS EC2",
             "AWS S3"
           ],
-          "code": "",
-          "deploy": "",
+          "code": "https://github.com/JhoselPR/raicesMx-backend.git",
+          "deploy": "https://raices-mx.vercel.app/",
           "img": ""
         },
         "6": {
@@ -118,8 +118,8 @@
           "title": "Taxi Runner",
           "description": "Videojuego desarrollado en Unity inspirado en un taxi recorriendo la CDMX, creado para SODVI con arte voxel y sistema de tienda para skins y potenciadores.",
           "stack": ["Unity", "C#", "MagicaVoxel", "Voxel Art"],
-          "code": "",
-          "deploy": "",
+          "code": "https://github.com/JhoselPR/TaxiRunner-Chido.git",
+          "deploy": "https://www.mediafire.com/file/7tweu37ryu98dyn/Taxi-Runner.zip/file",
           "img": ""
         },
         "7": {
@@ -127,7 +127,7 @@
           "title": "Java Calculator",
           "description": "Calculadora con interfaz gráfica desarrollada completamente en Java.",
           "stack": ["Java", "GUI"],
-          "code": "",
+          "code": "https://github.com/JhoselPR/java-calculator.git",
           "deploy": "",
           "img": ""
         },
@@ -136,8 +136,8 @@
           "title": "Gen Reveal",
           "description": "Invitación web para revelación de género con sistema de votación en tiempo real y tabla de resultados para invitados.",
           "stack": ["React", "JavaScript", "shadcn/ui", "Supabase"],
-          "code": "",
-          "deploy": "",
+          "code": "https://github.com/JhoselPR/gen-reveal.git",
+          "deploy": "https://nyjgender-reveal.netlify.app/",
           "img": ""
         },
         "9": {
@@ -145,8 +145,8 @@
           "title": "Andrew's Shower",
           "description": "Landing page personal para un Baby Shower con temática de Hércules.",
           "stack": ["React", "TypeScript", "Tailwind CSS"],
-          "code": "",
-          "deploy": "",
+          "code": "https://github.com/JhoselPR/andrews-shower.git",
+          "deploy": "https://babyandrew.netlify.app/",
           "img": ""
         }
       }
