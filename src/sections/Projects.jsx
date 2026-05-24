@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { motion, AnimatePresence } from "framer-motion";
 import SectionTitle from "../components/SectionTitle";
 import { projects } from "../data/projects";
 import ProjectCard from "../components/ProjectCard";
@@ -27,45 +28,45 @@ const bentoSpanPatterns = {
   5: [
     "md:col-span-7",
     "md:col-span-5",
-    "md:col-span-4",
-    "md:col-span-4",
-    "md:col-span-4",
+    "md:col-span-5",
+    "md:col-span-7",
+    "md:col-span-12",
   ],
   6: [
     "md:col-span-7",
     "md:col-span-5",
-    "md:col-span-6",
-    "md:col-span-6",
     "md:col-span-5",
     "md:col-span-7",
+    "md:col-span-6",
+    "md:col-span-6",
   ],
   7: [
     "md:col-span-7",
     "md:col-span-5",
+    "md:col-span-5",
+    "md:col-span-7",
     "md:col-span-4",
     "md:col-span-4",
     "md:col-span-4",
-    "md:col-span-6",
-    "md:col-span-6",
   ],
   8: [
     "md:col-span-7",
     "md:col-span-5",
-    "md:col-span-4",
-    "md:col-span-4",
-    "md:col-span-4",
+    "md:col-span-5",
+    "md:col-span-7",
     "md:col-span-6",
     "md:col-span-6",
-    "md:col-span-12",
+    "md:col-span-5",
+    "md:col-span-7",
   ],
   9: [
     "md:col-span-7",
     "md:col-span-5",
+    "md:col-span-5",
+    "md:col-span-7",
     "md:col-span-4",
     "md:col-span-4",
     "md:col-span-4",
-    "md:col-span-6",
-    "md:col-span-6",
     "md:col-span-5",
     "md:col-span-7",
   ],
@@ -74,6 +75,33 @@ const bentoSpanPatterns = {
 function getBentoClass(index, total) {
   return bentoSpanPatterns[total]?.[index] ?? "md:col-span-6";
 }
+
+const gridVariants = {
+  hidden: { opacity: 0, y: 12 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.25,
+      staggerChildren: 0.045,
+    },
+  },
+  exit: {
+    opacity: 0,
+    y: -10,
+    transition: { duration: 0.18 },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 14, scale: 0.98 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.25 },
+  },
+};
 
 export default function Projects() {
   const { t } = useTranslation();
@@ -139,15 +167,29 @@ export default function Projects() {
         ))}
       </div>
 
-      <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-12 md:gap-5">
-        {visibleProjects.map(({ project, item }, index) => (
-          <ProjectCard
-            key={project.key}
-            item={item}
-            bentoClass={getBentoClass(index, visibleProjects.length)}
-          />
-        ))}
-      </div>
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={activeTech}
+          className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-12 md:gap-5"
+          variants={gridVariants}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+        >
+          {visibleProjects.map(({ project, item }, index) => (
+            <motion.div
+              key={project.key}
+              className={getBentoClass(index, visibleProjects.length)}
+              variants={cardVariants}
+              initial="hidden"
+              animate="visible"
+              layout
+            >
+              <ProjectCard item={item} />
+            </motion.div>
+          ))}
+        </motion.div>
+      </AnimatePresence>
 
       {hasHiddenProjects && !showAllProjects ? (
         <div className="mt-8 flex justify-center">

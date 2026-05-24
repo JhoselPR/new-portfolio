@@ -1,10 +1,10 @@
 import { IoLogoGithub } from "react-icons/io5";
 import { MdOutlineWeb } from "react-icons/md";
 
-export default function ProjectCard({ item, bentoClass }) {
+export default function ProjectCard({ item }) {
   return (
     <article
-      className={`glass-card cyan-glow group flex min-h-[15rem] overflow-hidden rounded-2xl p-6 transition-all duration-300 hover:border-accent-primary/50! hover:shadow-[0_0_30px_rgba(100,255,218,0.12)]! motion-reduce:transition-none md:p-7 ${bentoClass}`}
+      className="glass-card cyan-glow group flex h-full min-h-[15rem] overflow-hidden rounded-2xl p-6 transition-all duration-300 hover:border-accent-primary/50! hover:shadow-[0_0_30px_rgba(100,255,218,0.12)]! motion-reduce:transition-none md:p-7"
     >
       {item.img ? (
         <div className="absolute inset-0 z-0 overflow-hidden rounded-[inherit]">
