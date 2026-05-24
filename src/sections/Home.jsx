@@ -4,17 +4,28 @@ import { IoMail } from "react-icons/io5";
 
 export default function Home() {
   const { t } = useTranslation();
+  const greeting = t("home.greeting");
+  const heroTitle = `${greeting} Jhosel.`;
 
   return (
     <section className="min-h-[calc(100svh-96px)] flex items-center md:-mt-20">
       <div className="w-full grid md:grid-cols-[auto_minmax(0,1fr)] gap-10 md:gap-8 items-center">
         <div className="flex items-center justify-center">
-        <AsciiPortrait />
-         </div>
+          <AsciiPortrait />
+        </div>
         <div className="flex flex-col gap-4 md:gap-6 text-center md:text-left max-w-xl">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl text-text-accent leading-relaxed font-title tracking-tight">
-            {t("home.greeting")}
-            <span className="text-accent-primary font-semibold"> Jhosel</span>.
+          <h1
+            className="text-4xl sm:text-5xl md:text-6xl text-text-accent leading-relaxed font-title tracking-tight"
+            aria-label={heroTitle}
+          >
+            <span
+              className="typewriter-text"
+              style={{ "--typewriter-characters": heroTitle.length }}
+              aria-hidden="true"
+            >
+              {greeting}
+              <span className="text-accent-primary font-semibold"> Jhosel</span>.
+            </span>
           </h1>
           <p className="sm:text-lg text-text-secondary mt-2 whitespace-pre-line leading-loose">
             {t("home.description")}

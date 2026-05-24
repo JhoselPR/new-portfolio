@@ -57,3 +57,51 @@ html {
   background: radial-gradient(circle at top right, rgba(100, 255, 218, 0.2), transparent 48%);
   opacity: 0.6;
 }
+
+.typewriter-text {
+  --typewriter-duration: 2.35s;
+  display: inline-block;
+  max-width: max-content;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: bottom;
+  animation: typewriter-reveal var(--typewriter-duration) steps(var(--typewriter-characters)) both;
+}
+
+.typewriter-text::after {
+  content: "";
+  display: inline-block;
+  width: 0.08em;
+  height: 0.82em;
+  margin-left: 0.08em;
+  background: var(--color-accent-primary);
+  vertical-align: -0.05em;
+  animation: typewriter-caret 0.85s step-end infinite;
+}
+
+@keyframes typewriter-reveal {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typewriter-caret {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .typewriter-text {
+    animation: none;
+    overflow: visible;
+  }
+}
