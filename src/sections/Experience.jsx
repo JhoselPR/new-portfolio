@@ -63,7 +63,7 @@ export default function Experience() {
             >
                <h3 className="text-xl md:text-2xl font-semibold font-title">
                 {data.position}{" "}
-                <span className="text-accent-primary">- {data.company}</span>
+                <span className="text-accent-primary">@ {data.company}</span>
               </h3>
 
               <p className="text-sm md:text-base text-text-muted mt-3 font-mono">{data.date}</p>

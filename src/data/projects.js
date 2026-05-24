@@ -1,20 +1,32 @@
 export const projects = [
   {
-    key: "design_system",
+    key: "1",
     featured: true,
   },
   {
-    key: "analytics_dashboard",
+    key: "2",
     wide: true,
   },
   {
-    key: "commerce_frontend",
+    key: "3",
   },
   {
-    key: "devtools_ui",
+    key: "4",
     tall: true,
   },
   {
-    key: "landing_performance",
+    key: "5",
+  },
+  {
+    key: "6",
+  },
+  {
+    key: "7",
+  },
+  {
+    key: "8",
+  },
+  {
+    key: "9",
   },
 ];

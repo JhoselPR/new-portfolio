@@ -56,46 +56,106 @@
       "title": "Proyectos",
       "subtitle": "Una selección de proyectos enfocados en frontend, con foco en design systems, performance y calidad de producto.",
       "items": {
-        "design_system": {
-          "label": "Design System",
-          "title": "Base de UI escalable para apps empresariales",
-          "description": "Diseñé y documenté componentes reutilizables, tokens de color y primitives de layout para mantener consistencia visual entre múltiples productos React.",
-          "stack": ["React", "TypeScript", "Storybook", "Figma Tokens"]
+        "1": {
+          "label": "App colaborativa para gestión del hogar",
+          "title": "Domux",
+          "description": "PWA fullstack para organizar tareas, gastos compartidos y rutinas del hogar en un solo lugar.",
+          "stack": ["React", "TypeScript", "Tailwind CSS", "Supabase", "PWA"],
+          "code": "",
+          "deploy": "",
+          "img": ""
         },
-        "analytics_dashboard": {
-          "label": "Data UX",
-          "title": "Dashboard analítico operacional",
-          "description": "Construí una experiencia de dashboard modular con gráficos responsivos, vistas por rol y navegación fluida para reducir fricción en flujos internos diarios.",
-          "stack": ["React", "Vite", "TanStack Query", "Recharts"]
+        "2": {
+          "label": "Plataforma link in bio",
+          "title": "DevTree",
+          "description": "Plataforma fullstack donde desarrolladores pueden compartir proyectos, redes sociales y su presencia online desde un perfil personalizable.",
+          "stack": ["MongoDB", "Express", "React", "Node.js", "TypeScript"],
+          "code": "",
+          "deploy": "",
+          "img": ""
         },
-        "commerce_frontend": {
+        "3": {
+          "label": "App iOS",
+          "title": "Guess Character",
+          "description": "Aplicación iOS que relaciona la personalidad del usuario con un personaje de Naruto según sus respuestas.",
+          "stack": ["Swift", "iOS"],
+          "code": "",
+          "deploy": "",
+          "img": ""
+        },
+        "4": {
+          "label": "Buscador de películas",
+          "title": "Movie Finder",
+          "description": "Web para buscar películas y consultar información detallada usando una API externa.",
+          "stack": ["React", "JavaScript", "External API"],
+          "code": "",
+          "deploy": "",
+          "img": ""
+        },
+        "5": {
           "label": "E-commerce",
-          "title": "Storefront orientado a conversión",
-          "description": "Implementé una UI moderna de storefront con jerarquía visual clara, interacciones rápidas y módulos reutilizables enfocados en conversión y usabilidad.",
-          "stack": ["React", "Tailwind", "Node API", "MySQL"]
+          "title": "RaícesMX",
+          "description": "Tienda en línea fullstack con frontend en React, backend en Spring Boot, base de datos MySQL e infraestructura desplegada en AWS.",
+          "stack": [
+            "React",
+            "JavaScript",
+            "Bootstrap",
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "AWS EC2",
+            "AWS S3"
+          ],
+          "code": "",
+          "deploy": "",
+          "img": ""
         },
-        "devtools_ui": {
-          "label": "Developer Tooling",
-          "title": "Interfaz de flujo inspirada en IDE",
-          "description": "Prototipé una interfaz técnica inspirada en patrones de IDE, con navegación compacta, interacciones pensadas para teclado y comunicación clara de estados.",
-          "stack": ["React", "Framer Motion", "CSS Grid", "i18next"]
+        "6": {
+          "label": "Videojuego endless runner 3D",
+          "title": "Taxi Runner",
+          "description": "Videojuego desarrollado en Unity inspirado en un taxi recorriendo la CDMX, creado para SODVI con arte voxel y sistema de tienda para skins y potenciadores.",
+          "stack": ["Unity", "C#", "MagicaVoxel", "Voxel Art"],
+          "code": "",
+          "deploy": "",
+          "img": ""
         },
-        "landing_performance": {
-          "label": "Performance",
-          "title": "Landing de alto rendimiento",
-          "description": "Entregué una landing pulida optimizada para rendimiento en lighthouse, accesibilidad y comportamiento responsive en mobile y desktop.",
-          "stack": ["Vite", "React", "Lazy Loading", "A11y"]
+        "7": {
+          "label": "Calculadora de escritorio",
+          "title": "Java Calculator",
+          "description": "Calculadora con interfaz gráfica desarrollada completamente en Java.",
+          "stack": ["Java", "GUI"],
+          "code": "",
+          "deploy": "",
+          "img": ""
+        },
+        "8": {
+          "label": "Invitación interactiva con votaciones",
+          "title": "Gen Reveal",
+          "description": "Invitación web para revelación de género con sistema de votación en tiempo real y tabla de resultados para invitados.",
+          "stack": ["React", "JavaScript", "shadcn/ui", "Supabase"],
+          "code": "",
+          "deploy": "",
+          "img": ""
+        },
+        "9": {
+          "label": "Landing page para evento",
+          "title": "Andrew's Shower",
+          "description": "Landing page personal para un Baby Shower con temática de Hércules.",
+          "stack": ["React", "TypeScript", "Tailwind CSS"],
+          "code": "",
+          "deploy": "",
+          "img": ""
         }
       }
     },
     "contact": {
       "title": "Contacto",
-      "description": "Si tenés un desafío interesante de frontend, una idea de producto o una colaboración en mente, hablemos.",
+      "description": "Si tienes un desafío interesante de frontend, una idea de producto o una colaboración en mente, hablemos.",
       "cta": "Enviarme un email"
     },
     "footer": {
       "rights": "© 2026 Jhosel Ruiz. Todos los derechos reservados.",
-      "built": "Construido con React, Vite y mucha atención al detalle."
+      "built": "Hecho por Jhosel.\nDiseño inspirado por Gazi."
     }
   }
 }

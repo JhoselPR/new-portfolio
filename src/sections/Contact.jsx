@@ -23,7 +23,7 @@ export default function Contact() {
           {t("contact.cta")}
         </a>
 
-        <div className="flex items-center gap-5 text-text-primary">
+        <div className="flex items-center md:w-45 md:justify-center gap-5 text-text-primary">
           <a href="https://www.linkedin.com/in/jhosel" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="w-5 h-5 hover:text-accent-primary transition-colors" />
           </a>

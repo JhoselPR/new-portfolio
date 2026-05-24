@@ -56,35 +56,95 @@
       "title": "Projects",
       "subtitle": "A selection of frontend-focused builds centered on design systems, performance, and product quality.",
       "items": {
-        "design_system": {
-          "label": "Design System",
-          "title": "Scalable UI foundation for enterprise apps",
-          "description": "Designed and documented reusable components, color tokens, and layout primitives to keep multiple React products visually consistent and easy to scale.",
-          "stack": ["React", "TypeScript", "Storybook", "Figma Tokens"]
+        "1": {
+          "label": "Collaborative home management app",
+          "title": "Domux",
+          "description": "Fullstack PWA to organize tasks, shared expenses, and household routines in one place.",
+          "stack": ["React", "TypeScript", "Tailwind CSS", "Supabase", "PWA"],
+          "code": "",
+          "deploy": "",
+          "img": ""
         },
-        "analytics_dashboard": {
-          "label": "Data UX",
-          "title": "Operational analytics dashboard",
-          "description": "Built a modular dashboard experience with responsive charts, role-aware views, and smooth navigation to reduce friction for daily internal workflows.",
-          "stack": ["React", "Vite", "TanStack Query", "Recharts"]
+        "2": {
+          "label": "Link in bio platform",
+          "title": "DevTree",
+          "description": "Fullstack platform where developers can showcase projects, social links, and their online presence through a customizable profile.",
+          "stack": ["MongoDB", "Express", "React", "Node.js", "TypeScript"],
+          "code": "",
+          "deploy": "",
+          "img": ""
         },
-        "commerce_frontend": {
-          "label": "E-commerce",
-          "title": "Conversion-oriented storefront",
-          "description": "Implemented a modern storefront UI with strong visual hierarchy, fast interactions, and reusable product modules focused on conversion and usability.",
-          "stack": ["React", "Tailwind", "Node API", "MySQL"]
+        "3": {
+          "label": "iOS app",
+          "title": "Guess Character",
+          "description": "iOS app that matches the user's personality with a Naruto character based on their answers.",
+          "stack": ["Swift", "iOS"],
+          "code": "",
+          "deploy": "",
+          "img": ""
         },
-        "devtools_ui": {
-          "label": "Developer Tooling",
-          "title": "IDE-inspired workflow interface",
-          "description": "Prototyped a technical interface inspired by IDE patterns, with compact navigation, keyboard-minded interactions, and clear status communication.",
-          "stack": ["React", "Framer Motion", "CSS Grid", "i18next"]
+        "4": {
+          "label": "Movie search web app",
+          "title": "Movie Finder",
+          "description": "Web app for searching movies and displaying detailed information using an external API.",
+          "stack": ["React", "JavaScript", "External API"],
+          "code": "",
+          "deploy": "",
+          "img": ""
         },
-        "landing_performance": {
-          "label": "Performance",
-          "title": "High-performance marketing landing",
-          "description": "Delivered a polished landing page optimized for lighthouse performance, accessibility, and responsive behavior across mobile and desktop breakpoints.",
-          "stack": ["Vite", "React", "Lazy Loading", "A11y"]
+        "5": {
+          "label": "E-commerce platform",
+          "title": "RaícesMX",
+          "description": "Fullstack online store with a React frontend, Spring Boot backend, MySQL database, and AWS-based infrastructure.",
+          "stack": [
+            "React",
+            "JavaScript",
+            "Bootstrap",
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "AWS EC2",
+            "AWS S3"
+          ],
+          "code": "",
+          "deploy": "",
+          "img": ""
+        },
+        "6": {
+          "label": "3D endless runner video game",
+          "title": "Taxi Runner",
+          "description": "Unity-based endless runner inspired by a taxi driving through Mexico City, created for SODVI with voxel art and an in-game shop system.",
+          "stack": ["Unity", "C#", "MagicaVoxel", "Voxel Art"],
+          "code": "",
+          "deploy": "",
+          "img": ""
+        },
+        "7": {
+          "label": "Desktop calculator application",
+          "title": "Java Calculator",
+          "description": "Desktop calculator with a graphical interface fully developed in Java.",
+          "stack": ["Java", "GUI"],
+          "code": "",
+          "deploy": "",
+          "img": ""
+        },
+        "8": {
+          "label": "Interactive voting invitation",
+          "title": "Gen Reveal",
+          "description": "Gender reveal invitation with real-time voting and a live results table for guests.",
+          "stack": ["React", "JavaScript", "shadcn/ui", "Supabase"],
+          "code": "",
+          "deploy": "",
+          "img": ""
+        },
+        "9": {
+          "label": "Event landing page",
+          "title": "Andrew's Shower",
+          "description": "Personal Baby Shower landing page inspired by Hercules.",
+          "stack": ["React", "TypeScript", "Tailwind CSS"],
+          "code": "",
+          "deploy": "",
+          "img": ""
         }
       }
     },
@@ -95,7 +155,7 @@
     },
     "footer": {
       "rights": "© 2026 Jhosel Ruiz. All rights reserved.",
-      "built": "Built with React, Vite, and attention to detail."
+      "built": "Built by Jhosel.\nDesign inspired by Gazi."
     }
   }
 }
