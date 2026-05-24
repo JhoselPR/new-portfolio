@@ -66,7 +66,7 @@
           "stack": ["React", "TypeScript", "Tailwind CSS", "Supabase", "PWA"],
           "code": "https://github.com/JhoselPR/domux.git",
           "deploy": "https://domux.vercel.app/",
-          "img": ""
+          "img": "/img/domux.png"
         },
         "2": {
           "label": "Plataforma link in bio",
@@ -75,7 +75,7 @@
           "stack": ["MongoDB", "Express", "React", "Node.js", "TypeScript"],
           "code": "https://github.com/JhoselPR/devtree.git",
           "deploy": "",
-          "img": ""
+          "img": "/img/devtree.png"
         },
         "3": {
           "label": "App iOS",
@@ -84,16 +84,16 @@
           "stack": ["Swift", "iOS"],
           "code": "https://github.com/JhoselPR/guess-character.git",
           "deploy": "",
-          "img": ""
+          "img": "/img/guess-character.png"
         },
         "4": {
-          "label": "Buscador de películas",
-          "title": "Movie Finder",
-          "description": "Web para buscar películas y consultar información detallada usando una API externa.",
-          "stack": ["React", "JavaScript", "External API"],
-          "code": "https://github.com/JhoselPR/MovieFinder.git",
-          "deploy": "https://moviefinder-jhoseldev.netlify.app/",
-          "img": ""
+          "label": "Videojuego endless runner 3D",
+          "title": "Taxi Runner",
+          "description": "Videojuego desarrollado en Unity inspirado en un taxi recorriendo la CDMX, creado para SODVI con arte voxel y sistema de tienda para skins y potenciadores.",
+          "stack": ["Unity", "C#", "MagicaVoxel", "Voxel Art"],
+          "code": "https://github.com/JhoselPR/TaxiRunner-Chido.git",
+          "deploy": "https://www.mediafire.com/file/7tweu37ryu98dyn/Taxi-Runner.zip/file",
+          "img": "/img/Taxi-Runner-menu.png"
         },
         "5": {
           "label": "E-commerce",
@@ -111,16 +111,16 @@
           ],
           "code": "https://github.com/JhoselPR/raicesMx-backend.git",
           "deploy": "https://raices-mx.vercel.app/",
-          "img": ""
+          "img": "/img/raicesmx.png"
         },
         "6": {
-          "label": "Videojuego endless runner 3D",
-          "title": "Taxi Runner",
-          "description": "Videojuego desarrollado en Unity inspirado en un taxi recorriendo la CDMX, creado para SODVI con arte voxel y sistema de tienda para skins y potenciadores.",
-          "stack": ["Unity", "C#", "MagicaVoxel", "Voxel Art"],
-          "code": "https://github.com/JhoselPR/TaxiRunner-Chido.git",
-          "deploy": "https://www.mediafire.com/file/7tweu37ryu98dyn/Taxi-Runner.zip/file",
-          "img": ""
+          "label": "Buscador de películas",
+          "title": "Movie Finder",
+          "description": "Web para buscar películas y consultar información detallada usando una API externa.",
+          "stack": ["React", "JavaScript", "External API"],
+          "code": "https://github.com/JhoselPR/MovieFinder.git",
+          "deploy": "https://moviefinder-jhoseldev.netlify.app/",
+          "img": "/img/movie-finder.png"
         },
         "7": {
           "label": "Calculadora de escritorio",
@@ -129,7 +129,7 @@
           "stack": ["Java", "GUI"],
           "code": "https://github.com/JhoselPR/java-calculator.git",
           "deploy": "",
-          "img": ""
+          "img": "/img/calculator.png"
         },
         "8": {
           "label": "Invitación interactiva con votaciones",
@@ -138,7 +138,7 @@
           "stack": ["React", "JavaScript", "shadcn/ui", "Supabase"],
           "code": "https://github.com/JhoselPR/gen-reveal.git",
           "deploy": "https://nyjgender-reveal.netlify.app/",
-          "img": ""
+          "img": "/img/gen-reveal.png"
         },
         "9": {
           "label": "Landing page para evento",
@@ -147,7 +147,7 @@
           "stack": ["React", "TypeScript", "Tailwind CSS"],
           "code": "https://github.com/JhoselPR/andrews-shower.git",
           "deploy": "https://babyandrew.netlify.app/",
-          "img": ""
+          "img": "/img/baby-shower.png"
         }
       }
     },

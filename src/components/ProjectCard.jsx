@@ -12,7 +12,7 @@ export default function ProjectCard({ item, bentoClass }) {
             src={item.img}
             alt=""
             aria-hidden="true"
-            className="h-full w-full scale-110 object-cover opacity-35 blur-[3px] saturate-125 transition-transform duration-700 group-hover:scale-105 motion-reduce:transition-none"
+            className="h-full w-full scale-110 object-cover opacity-35 blur-[1px] saturate-125 transition-transform duration-700 group-hover:scale-105 motion-reduce:transition-none"
           />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_12%,rgba(100,255,218,0.28),transparent_32%),linear-gradient(135deg,rgba(7,18,42,0.42),rgba(21,31,55,0.9)_68%)]" />
         </div>

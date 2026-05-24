@@ -66,7 +66,7 @@
           "stack": ["React", "TypeScript", "Tailwind CSS", "Supabase", "PWA"],
           "code": "https://github.com/JhoselPR/domux.git",
           "deploy": "https://domux.vercel.app/",
-          "img": ""
+          "img": "/img/domux.png"
         },
         "2": {
           "label": "Link in bio platform",
@@ -75,7 +75,7 @@
           "stack": ["MongoDB", "Express", "React", "Node.js", "TypeScript"],
           "code": "https://github.com/JhoselPR/devtree.git",
           "deploy": "",
-          "img": ""
+          "img": "/img/devtree.png"
         },
         "3": {
           "label": "iOS app",
@@ -84,16 +84,16 @@
           "stack": ["Swift", "iOS"],
           "code": "https://github.com/JhoselPR/guess-character.git",
           "deploy": "",
-          "img": ""
+          "img": "/img/guess-character.png"
         },
         "4": {
-          "label": "Movie search web app",
-          "title": "Movie Finder",
-          "description": "Web app for searching movies and displaying detailed information using an external API.",
-          "stack": ["React", "JavaScript", "External API"],
-          "code": "https://github.com/JhoselPR/MovieFinder.git",
-          "deploy": "https://moviefinder-jhoseldev.netlify.app/",
-          "img": ""
+          "label": "3D endless runner video game",
+          "title": "Taxi Runner",
+          "description": "Unity-based endless runner inspired by a taxi driving through Mexico City, created for SODVI with voxel art and an in-game shop system.",
+          "stack": ["Unity", "C#", "MagicaVoxel", "Voxel Art"],
+          "code": "https://github.com/JhoselPR/TaxiRunner-Chido.git",
+          "deploy": "https://www.mediafire.com/file/7tweu37ryu98dyn/Taxi-Runner.zip/file",
+          "img": "/img/Taxi-Runner-menu.png"
         },
         "5": {
           "label": "E-commerce platform",
@@ -111,16 +111,16 @@
           ],
           "code": "https://github.com/JhoselPR/raicesMx-backend.git",
           "deploy": "https://raices-mx.vercel.app/",
-          "img": ""
+          "img": "/img/raicesmx.png"
         },
         "6": {
-          "label": "3D endless runner video game",
-          "title": "Taxi Runner",
-          "description": "Unity-based endless runner inspired by a taxi driving through Mexico City, created for SODVI with voxel art and an in-game shop system.",
-          "stack": ["Unity", "C#", "MagicaVoxel", "Voxel Art"],
-          "code": "https://github.com/JhoselPR/TaxiRunner-Chido.git",
-          "deploy": "https://www.mediafire.com/file/7tweu37ryu98dyn/Taxi-Runner.zip/file",
-          "img": ""
+          "label": "Movie search web app",
+          "title": "Movie Finder",
+          "description": "Web app for searching movies and displaying detailed information using an external API.",
+          "stack": ["React", "JavaScript", "External API"],
+          "code": "https://github.com/JhoselPR/MovieFinder.git",
+          "deploy": "https://moviefinder-jhoseldev.netlify.app/",
+          "img": "/img/movie-finder.png"
         },
         "7": {
           "label": "Desktop calculator application",
@@ -129,7 +129,7 @@
           "stack": ["Java", "GUI"],
           "code": "https://github.com/JhoselPR/java-calculator.git",
           "deploy": "",
-          "img": ""
+          "img": "/img/calculator.png"
         },
         "8": {
           "label": "Interactive voting invitation",
@@ -138,7 +138,7 @@
           "stack": ["React", "JavaScript", "shadcn/ui", "Supabase"],
           "code": "https://github.com/JhoselPR/gen-reveal.git",
           "deploy": "https://nyjgender-reveal.netlify.app/",
-          "img": ""
+          "img": "/img/gen-reveal.png"
         },
         "9": {
           "label": "Event landing page",
@@ -147,7 +147,7 @@
           "stack": ["React", "TypeScript", "Tailwind CSS"],
           "code": "https://github.com/JhoselPR/andrews-shower.git",
           "deploy": "https://babyandrew.netlify.app/",
-          "img": ""
+          "img": "/img/baby-shower.png"
         }
       }
     },
