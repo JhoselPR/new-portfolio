@@ -66,7 +66,7 @@
           "stack": ["React", "TypeScript", "Tailwind CSS", "Supabase", "PWA"],
           "code": "https://github.com/JhoselPR/domux.git",
           "deploy": "https://domux.vercel.app/",
-          "img": "/img/domux.png"
+          "img": "/img/project-card/domux.jpg"
         },
         "2": {
           "label": "Plataforma link in bio",
@@ -75,7 +75,7 @@
           "stack": ["MongoDB", "Express", "React", "Node.js", "TypeScript"],
           "code": "https://github.com/JhoselPR/devtree.git",
           "deploy": "",
-          "img": "/img/devtree.png"
+          "img": "/img/project-card/devtree.jpg"
         },
         "3": {
           "label": "App iOS",
@@ -84,7 +84,7 @@
           "stack": ["Swift", "iOS"],
           "code": "https://github.com/JhoselPR/guess-character.git",
           "deploy": "",
-          "img": "/img/guess-character.png"
+          "img": "/img/project-card/guess-character.jpg"
         },
         "4": {
           "label": "Videojuego endless runner 3D",
@@ -93,7 +93,7 @@
           "stack": ["Unity", "C#", "MagicaVoxel", "Voxel Art"],
           "code": "https://github.com/JhoselPR/TaxiRunner-Chido.git",
           "deploy": "https://www.mediafire.com/file/7tweu37ryu98dyn/Taxi-Runner.zip/file",
-          "img": "/img/Taxi-Runner-menu.png"
+          "img": "/img/project-card/Taxi-Runner-menu.jpg"
         },
         "5": {
           "label": "E-commerce",
@@ -111,7 +111,7 @@
           ],
           "code": "https://github.com/JhoselPR/raicesMx-backend.git",
           "deploy": "https://raices-mx.vercel.app/",
-          "img": "/img/raicesmx.png"
+          "img": "/img/project-card/raicesmx.jpg"
         },
         "6": {
           "label": "Buscador de películas",
@@ -120,7 +120,7 @@
           "stack": ["React", "JavaScript", "External API"],
           "code": "https://github.com/JhoselPR/MovieFinder.git",
           "deploy": "https://moviefinder-jhoseldev.netlify.app/",
-          "img": "/img/movie-finder.png"
+          "img": "/img/project-card/movie-finder.jpg"
         },
         "7": {
           "label": "Calculadora de escritorio",
@@ -138,7 +138,7 @@
           "stack": ["React", "JavaScript", "shadcn/ui", "Supabase"],
           "code": "https://github.com/JhoselPR/gen-reveal.git",
           "deploy": "https://nyjgender-reveal.netlify.app/",
-          "img": "/img/gen-reveal.png"
+          "img": "/img/project-card/gen-reveal.jpg"
         },
         "9": {
           "label": "Landing page para evento",
@@ -147,7 +147,7 @@
           "stack": ["React", "TypeScript", "Tailwind CSS"],
           "code": "https://github.com/JhoselPR/andrews-shower.git",
           "deploy": "https://babyandrew.netlify.app/",
-          "img": "/img/baby-shower.png"
+          "img": "/img/project-card/baby-shower.jpg"
         }
       }
     },

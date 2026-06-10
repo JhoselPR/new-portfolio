@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { startTransition, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import SectionTitle from "../components/SectionTitle";
@@ -128,6 +128,12 @@ export default function Projects() {
     setShowAllProjects(false);
   }
 
+  function handleShowMore() {
+    startTransition(() => {
+      setShowAllProjects(true);
+    });
+  }
+
   return (
     <section>
       <SectionTitle title={t("projects.title")} number="03." />
@@ -195,7 +201,7 @@ export default function Projects() {
         <div className="mt-8 flex justify-center">
           <button
             type="button"
-            onClick={() => setShowAllProjects((current) => !current)}
+            onClick={handleShowMore}
             className="rounded-xl border border-accent-primary/40 bg-accent-primary/10 px-6 py-3 font-mono text-sm text-accent-primary transition-all duration-300 hover:-translate-y-0.5 hover:border-accent-primary hover:bg-accent-primary/15 hover:text-accent-hover focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-primary active:scale-95 motion-reduce:transition-none motion-reduce:hover:translate-y-0"
           >
             {t("projects.showMore")}
