@@ -8,12 +8,12 @@ export default function Home() {
   const heroTitle = `${greeting} Jhosel.`;
 
   return (
-    <section className="min-h-[calc(100svh-96px)] flex items-center md:-mt-20">
-      <div className="w-full grid md:grid-cols-[auto_minmax(0,1fr)] gap-10 md:gap-8 items-center">
+    <section className="min-h-[calc(100svh-96px)] flex items-center min-[1100px]:-mt-20">
+      <div className="w-full grid gap-10 min-[1100px]:grid-cols-[auto_minmax(0,1fr)] min-[1100px]:gap-8 items-center">
         <div className="flex items-center justify-center">
           <AsciiPortrait />
         </div>
-        <div className="flex flex-col gap-4 md:gap-6 text-center md:text-left max-w-xl">
+        <div className="flex flex-col gap-4 min-[1100px]:gap-6 text-center min-[1100px]:text-left max-w-xl mx-auto min-[1100px]:mx-0">
           <h1
             className="text-4xl sm:text-5xl md:text-6xl text-text-accent leading-relaxed font-title tracking-tight"
             aria-label={heroTitle}
@@ -35,7 +35,7 @@ export default function Home() {
             href="mailto:felix.jhosel@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-bg-primary bg-accent-primary hover:bg-accent-hover py-2.5 px-8 rounded-xl transition-all duration-300 w-fit cursor-pointer mt-8 md:mt-4 active:scale-95 flex items-center gap-2 self-center md:self-start font-medium"
+            className="text-bg-primary bg-accent-primary hover:bg-accent-hover py-2.5 px-8 rounded-xl transition-all duration-300 w-fit cursor-pointer mt-8 min-[1100px]:mt-4 active:scale-95 flex items-center gap-2 self-center min-[1100px]:self-start font-medium"
           >
             <IoMail size={20} />
             {t("home.cta")}

@@ -38,7 +38,7 @@ export default function Navbar() {
             Jhosel Ruiz
           </a>
 
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden lg:flex items-center gap-6">
             {sections.map((section) => (
               <a
                 key={section}
@@ -57,7 +57,7 @@ export default function Navbar() {
         </div>
 
         {/* DERECHA (NO TOCAR EN DESKTOP) */}
-        <div className="hidden md:flex gap-6 items-center">
+        <div className="hidden lg:flex gap-6 items-center">
           <div className="flex items-center gap-3">
             <a
               href="https://www.linkedin.com/in/jhosel"
@@ -107,7 +107,7 @@ export default function Navbar() {
         </div>
 
         {/* MOBILE BUTTON */}
-        <button className="md:hidden z-50" onClick={() => setIsOpen(!isOpen)}>
+        <button className="lg:hidden z-50" onClick={() => setIsOpen(!isOpen)}>
           <AnimatePresence mode="wait">
             {isOpen ? (
               <motion.div
@@ -138,7 +138,7 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed inset-0 md:hidden"
+            className="fixed inset-0 lg:hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -155,7 +155,7 @@ export default function Navbar() {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -20, opacity: 0 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="md:hidden absolute top-full left-0 w-full backdrop-blur-lg bg-bg-primary/95 border-b border-border-stealth shadow-lg"
+            className="lg:hidden absolute top-full left-0 w-full backdrop-blur-lg bg-bg-primary/95 border-b border-border-stealth shadow-lg"
           >
             <div className="flex flex-col items-center py-6 gap-6">
               {/* Sections */}
