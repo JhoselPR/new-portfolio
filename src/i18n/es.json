@@ -63,16 +63,35 @@
           "label": "App colaborativa para gestión del hogar",
           "title": "Domux",
           "description": "PWA fullstack para organizar tareas, gastos compartidos y rutinas del hogar en un solo lugar.",
-          "stack": ["React", "TypeScript", "Tailwind CSS", "Supabase", "PWA"],
+          "stack": [
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "PWA",
+            "PostgreSQL",
+            "Fullstack",
+            "Frontend",
+            "SQL"
+          ],
           "code": "https://github.com/JhoselPR/domux.git",
           "deploy": "https://domux.vercel.app/",
-          "img": "/img/project-card/domux.jpg"
+          "img": "/img/project-card/domux-iso.png"
         },
         "2": {
           "label": "Plataforma link in bio",
           "title": "DevTree",
           "description": "Plataforma fullstack donde desarrolladores pueden compartir proyectos, redes sociales y su presencia online desde un perfil personalizable.",
-          "stack": ["MongoDB", "Express", "React", "Node.js", "TypeScript"],
+          "stack": [
+            "MongoDB",
+            "Express",
+            "React",
+            "Node.js",
+            "TypeScript",
+            "Fullstack",
+            "Frontend",
+            "Backend",
+            "NoSQL"
+          ],
           "code": "https://github.com/JhoselPR/devtree.git",
           "deploy": "",
           "img": "/img/project-card/devtree.jpg"
@@ -102,12 +121,14 @@
           "stack": [
             "React",
             "JavaScript",
-            "Bootstrap",
             "Java",
             "Spring Boot",
             "MySQL",
-            "AWS EC2",
-            "AWS S3"
+            "AWS",
+            "Fullstack",
+            "Frontend",
+            "Backend",
+            "SQL"
           ],
           "code": "https://github.com/JhoselPR/raicesMx-backend.git",
           "deploy": "https://raices-mx.vercel.app/",
@@ -117,7 +138,7 @@
           "label": "Buscador de películas",
           "title": "Movie Finder",
           "description": "Web para buscar películas y consultar información detallada usando una API externa.",
-          "stack": ["React", "JavaScript", "External API"],
+          "stack": ["React", "JavaScript", "External API", "Frontend"],
           "code": "https://github.com/JhoselPR/MovieFinder.git",
           "deploy": "https://moviefinder-jhoseldev.netlify.app/",
           "img": "/img/project-card/movie-finder.jpg"
@@ -135,7 +156,15 @@
           "label": "Invitación interactiva con votaciones",
           "title": "Gen Reveal",
           "description": "Invitación web para revelación de género con sistema de votación en tiempo real y tabla de resultados para invitados.",
-          "stack": ["React", "JavaScript", "shadcn/ui", "Supabase"],
+          "stack": [
+            "React",
+            "JavaScript",
+            "shadcn/ui",
+            "Frontend",
+            "Fullstack",
+            "PostgreSQL",
+            "SQL"
+          ],
           "code": "https://github.com/JhoselPR/gen-reveal.git",
           "deploy": "https://nyjgender-reveal.netlify.app/",
           "img": "/img/project-card/gen-reveal.jpg"
@@ -144,7 +173,7 @@
           "label": "Landing page para evento",
           "title": "Andrew's Shower",
           "description": "Landing page personal para un Baby Shower con temática de Hércules.",
-          "stack": ["React", "TypeScript", "Tailwind CSS"],
+          "stack": ["React", "TypeScript", "Tailwind CSS", "Frontend"],
           "code": "https://github.com/JhoselPR/andrews-shower.git",
           "deploy": "https://babyandrew.netlify.app/",
           "img": "/img/project-card/baby-shower.jpg"

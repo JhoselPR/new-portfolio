@@ -8,16 +8,17 @@ import ProjectCard from "../components/ProjectCard";
 const ALL_TECH_FILTER = "all";
 const INITIAL_PROJECTS_COUNT = 4;
 const TECH_FILTERS = [
+  "Frontend",
+  "Backend",
+  "Fullstack",
   "React",
   "TypeScript",
   "JavaScript",
-  "Node.js",
   "Unity",
   "iOS",
-  "Supabase",
-  "MySQL",
-  "MongoDB",
   "Java",
+  "SQL",
+  "NoSQL",
 ];
 
 const bentoSpanPatterns = {

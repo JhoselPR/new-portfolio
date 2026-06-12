@@ -2,10 +2,10 @@ import { IoLogoGithub } from "react-icons/io5";
 import { MdOutlineWeb } from "react-icons/md";
 
 export default function ProjectCard({ item }) {
+  const hiddenStackItems = ["Frontend", "Backend", "Fullstack", "SQL", "NoSQL"];
+
   return (
-    <article
-      className="glass-card cyan-glow group flex h-full min-h-[15rem] overflow-hidden rounded-2xl p-6 transition-all duration-300 hover:border-accent-primary/50! hover:shadow-[0_0_30px_rgba(100,255,218,0.12)]! motion-reduce:transition-none md:p-7"
-    >
+    <article className="glass-card cyan-glow group flex h-full min-h-[15rem] overflow-hidden rounded-2xl p-6 transition-all duration-300 hover:border-accent-primary/50! hover:shadow-[0_0_30px_rgba(100,255,218,0.12)]! motion-reduce:transition-none md:p-7">
       {item.img ? (
         <div className="absolute inset-0 z-0 overflow-hidden rounded-[inherit]">
           <img
@@ -15,7 +15,7 @@ export default function ProjectCard({ item }) {
             loading="lazy"
             decoding="async"
             fetchPriority="low"
-            className="h-full w-full scale-110 object-cover opacity-30 transition-transform duration-700 group-hover:scale-105 motion-reduce:transition-none"
+            className="h-full w-full scale-105 object-cover opacity-30 transition-transform duration-700 group-hover:scale-100 motion-reduce:transition-none blur-[2px]"
           />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_12%,rgba(100,255,218,0.3),transparent_32%),linear-gradient(135deg,rgba(7,18,42,0.48),rgba(21,31,55,0.92)_68%)]" />
         </div>
@@ -56,14 +56,24 @@ export default function ProjectCard({ item }) {
         </p>
 
         <div className="mt-auto pt-6 flex flex-wrap gap-2">
-          {item.stack.map((tech) => (
+          {/* {item.stack.map((tech) => (
             <span
               key={tech}
               className="text-xs font-mono text-text-muted border border-border-stealth rounded-md bg-bg-primary/20 px-2 py-1 backdrop-blur-sm"
             >
               {tech}
             </span>
-          ))}
+          ))} */}
+          {item.stack
+            .filter((tech) => !hiddenStackItems.includes(tech))
+            .map((tech) => (
+              <span
+                key={tech}
+                className="text-xs font-mono text-text-muted border border-border-stealth rounded-md bg-bg-primary/20 px-2 py-1 backdrop-blur-sm"
+              >
+                {tech}
+              </span>
+            ))}
         </div>
       </div>
     </article>
