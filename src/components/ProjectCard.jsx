@@ -15,7 +15,7 @@ export default function ProjectCard({ item }) {
             loading="lazy"
             decoding="async"
             fetchPriority="low"
-            className="h-full w-full scale-105 object-cover opacity-30 transition-transform duration-700 group-hover:scale-100 motion-reduce:transition-none blur-[2px]"
+            className="h-full w-full scale-105 object-cover opacity-30 transition-transform duration-700 group-hover:scale-100 motion-reduce:transition-none"
           />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_12%,rgba(100,255,218,0.3),transparent_32%),linear-gradient(135deg,rgba(7,18,42,0.48),rgba(21,31,55,0.92)_68%)]" />
         </div>

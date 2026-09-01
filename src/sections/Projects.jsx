@@ -190,7 +190,7 @@ export default function Projects() {
               variants={cardVariants}
               initial="hidden"
               animate="visible"
-              layout
+              layout="position"
             >
               <ProjectCard item={item} />
             </motion.div>
