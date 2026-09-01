@@ -26,9 +26,9 @@
           "position": "Frontend Developer",
           "date": "Jan 2025 - Present",
           "description": [
-            "Designed and developed multiple React applications used by thousands of collaborators within the corporate ecosystem.",
-            "Collaborated with backend, design, and product teams to implement new features and improve user experience.",
-            "Elevated the visual quality of products through design systems and optimized application performance."
+            "Developed over 10 enterprise web applications for internal communications, innovation, civil protection, and employee management.",
+            "Built solutions for process management, internal platforms, and gamification experiences supporting corporate initiatives.",
+            "Collaborated with Backend, UX/UI, and QA teams throughout the software development lifecycle, from requirements analysis to deployment."
           ]
         },
         "generation": {
@@ -60,6 +60,24 @@
       "subtitle": "A selection of frontend-focused builds centered on design systems, performance, and product quality.",
       "items": {
         "1": {
+          "label": "AI-powered VALORANT roast card generator",
+          "title": "Clutch or Cringe",
+          "description": "Web app that analyzes real VALORANT player stats and uses generative AI to create personalized roast cards.",
+          "stack": [
+            "React",
+            "TypeScript",
+            "Vercel",
+            "Groq",
+            "Parse.bot",
+            "REST API",
+            "Generative AI",
+            "Fullstack"
+          ],
+          "code": "https://github.com/JhoselPR/valo-roaster.git",
+          "deploy": "https://valo-roaster.vercel.app/",
+          "img": "/img/project-card/Valo-Roaster.png"
+        },
+        "2": {
           "label": "Collaborative home management app",
           "title": "Domux",
           "description": "Fullstack PWA to organize tasks, shared expenses, and household routines in one place.",
@@ -77,7 +95,7 @@
           "deploy": "https://domux.vercel.app/",
           "img": "/img/project-card/domux-iso.png"
         },
-        "2": {
+        "3": {
           "label": "Link in bio platform",
           "title": "DevTree",
           "description": "Fullstack platform where developers can showcase projects, social links, and their online presence through a customizable profile.",
@@ -96,7 +114,7 @@
           "deploy": "",
           "img": "/img/project-card/devtree.jpg"
         },
-        "3": {
+        "6": {
           "label": "iOS app",
           "title": "Guess Character",
           "description": "iOS app that matches the user's personality with a Naruto character based on their answers.",
@@ -105,7 +123,7 @@
           "deploy": "",
           "img": "/img/project-card/guess-character.jpg"
         },
-        "4": {
+        "5": {
           "label": "3D endless runner video game",
           "title": "Taxi Runner",
           "description": "Unity-based endless runner inspired by a taxi driving through Mexico City, created for SODVI with voxel art and an in-game shop system.",
@@ -114,7 +132,7 @@
           "deploy": "https://www.mediafire.com/file/7tweu37ryu98dyn/Taxi-Runner.zip/file",
           "img": "/img/project-card/Taxi-Runner-menu.jpg"
         },
-        "5": {
+        "4": {
           "label": "E-commerce platform",
           "title": "RaícesMX",
           "description": "Fullstack online store with a React frontend, Spring Boot backend, MySQL database, and AWS-based infrastructure.",
@@ -134,7 +152,7 @@
           "deploy": "https://raices-mx.vercel.app/",
           "img": "/img/project-card/raicesmx.jpg"
         },
-        "6": {
+        "7": {
           "label": "Movie search web app",
           "title": "Movie Finder",
           "description": "Web app for searching movies and displaying detailed information using an external API.",
@@ -143,7 +161,7 @@
           "deploy": "https://moviefinder-jhoseldev.netlify.app/",
           "img": "/img/project-card/movie-finder.jpg"
         },
-        "7": {
+        "8": {
           "label": "Desktop calculator application",
           "title": "Java Calculator",
           "description": "Desktop calculator with a graphical interface fully developed in Java.",
@@ -152,7 +170,7 @@
           "deploy": "",
           "img": "/img/calculator.png"
         },
-        "8": {
+        "9": {
           "label": "Interactive voting invitation",
           "title": "Gen Reveal",
           "description": "Gender reveal invitation with real-time voting and a live results table for guests.",
@@ -169,7 +187,7 @@
           "deploy": "https://nyjgender-reveal.netlify.app/",
           "img": "/img/project-card/gen-reveal.jpg"
         },
-        "9": {
+        "10": {
           "label": "Event landing page",
           "title": "Andrew's Shower",
           "description": "Personal Baby Shower landing page inspired by Hercules.",

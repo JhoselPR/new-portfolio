@@ -26,9 +26,9 @@
           "position": "Desarrollador Frontend",
           "date": "Ene 2025 - Presente",
           "description": [
-            "Diseñé y desarrollé multiples aplicaciones React utilizadas por miles de colaboradores dentro del ecosistema corporativo.",
-            "Colaboré con equipos de backend, diseño y producto para implementar nuevas funcionalidades y mejorar la experiencia del usuario.",
-            "Elevé la calidad visual de los productos mediante design system y optimicé el rendimiento de las aplicaciones."
+            "Desarrollé más de 10 aplicaciones web empresariales para comunicación interna, innovación, protección civil y gestión de empleados.",
+            "Construí soluciones para la gestión de procesos, plataformas internas y experiencias de gamificación orientadas a iniciativas corporativas.",
+            "Colaboré con equipos de Backend, UX/UI y QA durante todo el ciclo de desarrollo de software, desde el análisis de requerimientos hasta el despliegue."
           ]
         },
         "generation": {
@@ -60,6 +60,24 @@
       "subtitle": "Una selección de proyectos enfocados en frontend, con foco en design systems, performance y calidad de producto.",
       "items": {
         "1": {
+          "label": "Generador de roast cards para VALORANT",
+          "title": "Clutch or Cringe",
+          "description": "Web app que analiza estadísticas reales de jugadores de VALORANT y genera roast cards personalizadas con IA.",
+          "stack": [
+            "React",
+            "TypeScript",
+            "Vercel",
+            "Groq",
+            "Parse.bot",
+            "REST API",
+            "Generative AI",
+            "Fullstack"
+          ],
+          "code": "https://github.com/JhoselPR/valo-roaster.git",
+          "deploy": "https://valo-roaster.vercel.app/",
+          "img": "/img/project-card/Valo-Roaster.png"
+        },
+        "2": {
           "label": "App colaborativa para gestión del hogar",
           "title": "Domux",
           "description": "PWA fullstack para organizar tareas, gastos compartidos y rutinas del hogar en un solo lugar.",
@@ -77,7 +95,7 @@
           "deploy": "https://domux.vercel.app/",
           "img": "/img/project-card/domux-iso.png"
         },
-        "2": {
+        "3": {
           "label": "Plataforma link in bio",
           "title": "DevTree",
           "description": "Plataforma fullstack donde desarrolladores pueden compartir proyectos, redes sociales y su presencia online desde un perfil personalizable.",
@@ -96,7 +114,7 @@
           "deploy": "",
           "img": "/img/project-card/devtree.jpg"
         },
-        "3": {
+        "6": {
           "label": "App iOS",
           "title": "Guess Character",
           "description": "Aplicación iOS que relaciona la personalidad del usuario con un personaje de Naruto según sus respuestas.",
@@ -105,7 +123,7 @@
           "deploy": "",
           "img": "/img/project-card/guess-character.jpg"
         },
-        "4": {
+        "5": {
           "label": "Videojuego endless runner 3D",
           "title": "Taxi Runner",
           "description": "Videojuego desarrollado en Unity inspirado en un taxi recorriendo la CDMX, creado para SODVI con arte voxel y sistema de tienda para skins y potenciadores.",
@@ -114,7 +132,7 @@
           "deploy": "https://www.mediafire.com/file/7tweu37ryu98dyn/Taxi-Runner.zip/file",
           "img": "/img/project-card/Taxi-Runner-menu.jpg"
         },
-        "5": {
+        "4": {
           "label": "E-commerce",
           "title": "RaícesMX",
           "description": "Tienda en línea fullstack con frontend en React, backend en Spring Boot, base de datos MySQL e infraestructura desplegada en AWS.",
@@ -134,7 +152,7 @@
           "deploy": "https://raices-mx.vercel.app/",
           "img": "/img/project-card/raicesmx.jpg"
         },
-        "6": {
+        "7": {
           "label": "Buscador de películas",
           "title": "Movie Finder",
           "description": "Web para buscar películas y consultar información detallada usando una API externa.",
@@ -143,7 +161,7 @@
           "deploy": "https://moviefinder-jhoseldev.netlify.app/",
           "img": "/img/project-card/movie-finder.jpg"
         },
-        "7": {
+        "8": {
           "label": "Calculadora de escritorio",
           "title": "Java Calculator",
           "description": "Calculadora con interfaz gráfica desarrollada completamente en Java.",
@@ -152,7 +170,7 @@
           "deploy": "",
           "img": "/img/calculator.png"
         },
-        "8": {
+        "9": {
           "label": "Invitación interactiva con votaciones",
           "title": "Gen Reveal",
           "description": "Invitación web para revelación de género con sistema de votación en tiempo real y tabla de resultados para invitados.",
@@ -169,7 +187,7 @@
           "deploy": "https://nyjgender-reveal.netlify.app/",
           "img": "/img/project-card/gen-reveal.jpg"
         },
-        "9": {
+        "10": {
           "label": "Landing page para evento",
           "title": "Andrew's Shower",
           "description": "Landing page personal para un Baby Shower con temática de Hércules.",
