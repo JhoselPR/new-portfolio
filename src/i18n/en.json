@@ -1,5 +1,6 @@
 {
   "translation": {
+    "cvFile": "/files/FelixPenaloza_EN.pdf",
     "navbar": {
       "home": "Home",
       "about": "About",
@@ -24,30 +25,81 @@
         "grupo_salinas": {
           "company": "Grupo Salinas",
           "position": "Frontend Developer",
-          "date": "Jan 2025 - Present",
+          "team": "Bienestar, Comunicación e Integración",
+          "date": "Mar 2026 - Present",
           "description": [
-            "Developed over 10 enterprise web applications for internal communications, innovation, civil protection, and employee management.",
-            "Built solutions for process management, internal platforms, and gamification experiences supporting corporate initiatives.",
-            "Collaborated with Backend, UX/UI, and QA teams throughout the software development lifecycle, from requirements analysis to deployment."
+            "Built gamified campaigns like the World Cup Rally and the Christmas Rally for 10,000–15,000 employees, with 10,000+ participations, mini-games, level progression, digital cards, and dashboards.",
+            "Build applications with React, TypeScript, Tailwind CSS, and TanStack Query, the stack I championed for the team, integrating REST APIs from the backend team (.NET) based on jointly defined JSON contracts.",
+            "Work across the full development lifecycle with Scrum in Jira: requirements, estimation, roadmap, implementation from UX/UI designs, QA, client testing, and production deployment.",
+            "Drive the team's technical evolution, promoting best practices and the adoption of AI-assisted development tools like Claude Code."
+          ],
+          "stack": [
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "TanStack Query",
+            "Axios",
+            "Jira",
+            "Claude Code"
+          ]
+        },
+        "dialogus": {
+          "company": "Dialogus",
+          "position": "Trainee Frontend Developer",
+          "team": "Grupo Salinas consultancy · Bienestar, Comunicación e Integración",
+          "date": "Jan 2025 - Mar 2026",
+          "description": [
+            "Led the modernization of the team's frontend stack, migrating from vanilla HTML, CSS, and JavaScript to React with TypeScript, Tailwind CSS, Axios, and TanStack Query, and using Astro for high-performance landing pages.",
+            "Built and maintained 10+ enterprise web applications, both new and legacy, such as a civil protection manager, an event manager, and an innovation ideas platform, turning Excel-based processes into web systems.",
+            "Developed microsites for corporate events like Jalmo and Vida y Movimiento, with agendas, registration forms, Google Analytics, and SEO optimization.",
+            "Defined JSON contracts with the backend team (.NET) and integrated their REST APIs, collaborating with UX/UI and QA from requirements to deployment."
+          ],
+          "stack": [
+            "React",
+            "TypeScript",
+            "JavaScript",
+            "Tailwind CSS",
+            "TanStack Query",
+            "Axios",
+            "Astro",
+            "Google Analytics"
           ]
         },
         "generation": {
           "company": "Generation México",
-          "position": "Full Stack Developer",
-          "date": "2024 - 2025",
+          "position": "Java Full Stack Developer",
+          "team": "Bootcamp · Capstone project: RaícesMX",
+          "date": "Sep 2024 - Jan 2025",
           "description": [
-            "Developed a full e-commerce application using React, Java, and MySQL as a final project, demonstrating skills in both frontend and backend.",
-            "Built RESTful APIs with Java Spring Boot to handle business logic and data persistence.",
-            "Implemented agile methodology in group projects, effectively collaborating with peers to deliver high-quality software solutions."
+            "Completed the intensive Java Full Stack Developer bootcamp and earned the Generation México and AIFYC certification.",
+            "Co-developed RaícesMX, an e-commerce platform with a React frontend, Java Spring Boot backend, and MySQL database, deployed on AWS (EC2, S3).",
+            "Built REST APIs for business logic and data persistence, and contributed to the product's UX/UI design.",
+            "Worked with Scrum in a cross-functional team, from product definition to deployment."
+          ],
+          "stack": [
+            "React",
+            "JavaScript",
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "AWS"
           ]
         },
         "sodvi": {
           "company": "SODVI",
-          "position": "Game Developer",
-          "date": "2022 - 2023",
+          "position": "Game Developer · Project Lead",
+          "team": "School of Engineering, UNAM",
+          "date": "Aug 2022 - Jan 2023",
           "description": [
-            "Coordinated a development team as Project Manager, ensuring timely delivery of projects and maintaining effective communication among team members.",
-            "Developed multiple video games, from conceptualization to implementation, using Unity and C#."
+            "Developed several video games with Unity and C#, from concept to implementation.",
+            "Led the development of Taxi Runner, a 3D endless runner inspired by a taxi driving through Mexico City, which won best game of the semester.",
+            "Implemented Taxi Runner's core gameplay mechanics, in a game featuring voxel art and a shop for skins and power-ups.",
+            "Coordinated the team as Project Manager, ensuring on-time delivery and effective communication among its members."
+          ],
+          "stack": [
+            "Unity",
+            "C#",
+            "MagicaVoxel"
           ]
         }
       }

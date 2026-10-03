@@ -81,7 +81,7 @@ export default function Navbar() {
               <IoMail className="w-5 h-auto hover:scale-105 hover:text-accent-primary transition-transform duration-300 text-text-primary" />
             </a>
             <a
-              href="/files/CV_FJPR.pdf"
+              href={t("cvFile")}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -204,7 +204,7 @@ export default function Navbar() {
                   <IoMail className="w-5 h-auto hover:scale-105 hover:text-accent-primary transition-transform duration-300 text-text-primary" />
                 </a>
                 <a
-                  href="/files/CV_FJPR.pdf"
+                  href={t("cvFile")}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -1,5 +1,6 @@
 {
   "translation": {
+    "cvFile": "/files/FelixPenaloza_ES.pdf",
     "navbar": {
       "home": "Inicio",
       "about": "Sobre mí",
@@ -24,30 +25,81 @@
         "grupo_salinas": {
           "company": "Grupo Salinas",
           "position": "Desarrollador Frontend",
-          "date": "Ene 2025 - Presente",
+          "team": "Bienestar, Comunicación e Integración",
+          "date": "Mar 2026 - Presente",
           "description": [
-            "Desarrollé más de 10 aplicaciones web empresariales para comunicación interna, innovación, protección civil y gestión de empleados.",
-            "Construí soluciones para la gestión de procesos, plataformas internas y experiencias de gamificación orientadas a iniciativas corporativas.",
-            "Colaboré con equipos de Backend, UX/UI y QA durante todo el ciclo de desarrollo de software, desde el análisis de requerimientos hasta el despliegue."
+            "Construí campañas gamificadas como el Rally Mundialista y el Rally Navideño para 10,000–15,000 colaboradores, con más de 10,000 participaciones, minijuegos, sistema de niveles, tarjetas digitales y dashboards.",
+            "Desarrollo aplicaciones con React, TypeScript, Tailwind CSS y TanStack Query, el stack que impulsé en el área, e integro APIs REST del equipo backend (.NET) a partir de contratos JSON definidos en conjunto.",
+            "Participo en todo el ciclo de desarrollo bajo Scrum en Jira: requerimientos, estimación, roadmap, implementación desde diseños UX/UI, QA, pruebas con cliente y despliegue a producción.",
+            "Impulso la evolución técnica del área, promoviendo buenas prácticas y la adopción de herramientas de desarrollo con IA como Claude Code."
+          ],
+          "stack": [
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "TanStack Query",
+            "Axios",
+            "Jira",
+            "Claude Code"
+          ]
+        },
+        "dialogus": {
+          "company": "Dialogus",
+          "position": "Trainee Frontend Developer",
+          "team": "Consultora de Grupo Salinas · Bienestar, Comunicación e Integración",
+          "date": "Ene 2025 - Mar 2026",
+          "description": [
+            "Encabecé la modernización del stack frontend del área, migrando de HTML, CSS y JavaScript vanilla a React con TypeScript, Tailwind CSS, Axios y TanStack Query, y usando Astro para landings de alto rendimiento.",
+            "Desarrollé y mantuve más de 10 aplicaciones web corporativas, nuevas y heredadas, como un administrador de protección civil, un gestor de eventos y una plataforma de ideas de innovación, convirtiendo procesos en Excel en sistemas web.",
+            "Desarrollé micrositios para eventos corporativos como Jalmo y Vida y Movimiento, con agendas, formularios de registro, Google Analytics y optimización SEO.",
+            "Definí contratos JSON con el equipo backend (.NET) e integré sus APIs REST, colaborando con UX/UI y QA desde los requerimientos hasta el despliegue."
+          ],
+          "stack": [
+            "React",
+            "TypeScript",
+            "JavaScript",
+            "Tailwind CSS",
+            "TanStack Query",
+            "Axios",
+            "Astro",
+            "Google Analytics"
           ]
         },
         "generation": {
           "company": "Generation México",
-          "position": "Desarrollador Full Stack",
-          "date": "2024 - 2025",
+          "position": "Java Full Stack Developer",
+          "team": "Bootcamp · Proyecto final: RaícesMX",
+          "date": "Sep 2024 - Ene 2025",
           "description": [
-            "Desarrollé un e-commerce completo utilizando React, Java y MySQL como proyecto final, demostrando habilidades en frontend y backend.",
-            "Construí APIs RESTful con Java Spring Boot para manejar la lógica de negocio y la persistencia de datos.",
-            "Implementé la metodología ágil en proyectos grupales, colaborando efectivamente con compañeros para entregar soluciones de software de alta calidad."
+            "Completé el bootcamp intensivo Java Full Stack Developer y obtuve la certificación de Generation México y AIFYC.",
+            "Desarrollé en equipo RaícesMX, un e-commerce con frontend en React, backend en Java Spring Boot y base de datos MySQL, desplegado en AWS (EC2, S3).",
+            "Construí APIs REST para la lógica de negocio y la persistencia de datos, y participé en el diseño UX/UI del producto.",
+            "Trabajé con metodología Scrum en un equipo multidisciplinario, desde la definición del producto hasta el despliegue."
+          ],
+          "stack": [
+            "React",
+            "JavaScript",
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "AWS"
           ]
         },
         "sodvi": {
           "company": "SODVI",
-          "position": "Desarrollador de videojuegos",
-          "date": "2022 - 2023",
+          "position": "Desarrollador de videojuegos · Líder de proyecto",
+          "team": "Facultad de Ingeniería, UNAM",
+          "date": "Ago 2022 - Ene 2023",
           "description": [
-            "Coordiné un equipo de desarrollo como Project Manager, asegurando la entrega oportuna de proyectos y manteniendo una comunicación efectiva entre los miembros del equipo.",
-            "Desarrollé multiples videojuegos, desde la conceptualización hasta la implementación, utilizando Unity y C#."
+            "Desarrollé varios videojuegos con Unity y C#, desde la conceptualización hasta la implementación.",
+            "Lideré el desarrollo de Taxi Runner, un endless runner 3D inspirado en un taxi recorriendo la CDMX, que ganó como el mejor videojuego del semestre.",
+            "Implementé las mecánicas principales de Taxi Runner, un juego con arte voxel y tienda de skins y potenciadores.",
+            "Coordiné al equipo como Project Manager, asegurando entregas a tiempo y una comunicación efectiva entre sus miembros."
+          ],
+          "stack": [
+            "Unity",
+            "C#",
+            "MagicaVoxel"
           ]
         }
       }

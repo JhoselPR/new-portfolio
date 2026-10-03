@@ -33,7 +33,7 @@ export default function Contact() {
           <a href="mailto:felix.jhosel@gmail.com" target="_blank" rel="noopener noreferrer">
             <IoMail className="w-5 h-5 hover:text-accent-primary transition-colors" />
           </a>
-          <a href="/files/CV_FJPR.pdf" target="_blank" rel="noopener noreferrer">
+          <a href={t("cvFile")} target="_blank" rel="noopener noreferrer">
             <TbFileCvFilled className="w-5 h-5 hover:text-accent-primary transition-colors" />
           </a>
         </div>

@@ -66,6 +66,10 @@ export default function Experience() {
                 <span className="text-accent-primary">@ {data.company}</span>
               </h3>
 
+              {data.team && (
+                <p className="text-text-secondary mt-2">{data.team}</p>
+              )}
+
               <p className="text-sm md:text-base text-text-muted mt-3 font-mono">{data.date}</p>
 
               <ul className="mt-6 space-y-4 list-[circle] marker:text-text-secondary list-inside">
@@ -75,6 +79,19 @@ export default function Experience() {
                   </li>
                 ))}
               </ul>
+
+              {data.stack && (
+                <div className="mt-6 flex flex-wrap gap-2">
+                  {data.stack.map((tech) => (
+                    <span
+                      key={tech}
+                      className="text-xs font-mono text-text-muted border border-border-stealth rounded-md bg-bg-primary/20 px-2 py-1 backdrop-blur-sm"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              )}
             </motion.div>
           </AnimatePresence>
         </div>
