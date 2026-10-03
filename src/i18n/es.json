@@ -112,6 +112,8 @@
       "code": "Código",
       "screenshotAlt": "Captura de {{title}}",
       "subtitle": "Proyectos personales y académicos donde exploro IA generativa, visión por computadora, 3D y apps fullstack, siempre con foco en la experiencia de usuario.",
+      "showOthers": "Ver {{count}} proyectos más",
+      "hideOthers": "Ocultar proyectos",
       "items": {
         "cybertracker": {
           "label": "Workspace 3D controlado con gestos",
