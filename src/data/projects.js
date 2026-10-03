@@ -29,4 +29,7 @@ export const projects = [
   {
     key: "9",
   },
+  {
+    key: "10",
+  },
 ];
