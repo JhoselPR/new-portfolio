@@ -114,6 +114,8 @@
       "subtitle": "Proyectos personales y académicos donde exploro IA generativa, visión por computadora, 3D y apps fullstack, siempre con foco en la experiencia de usuario.",
       "showOthers": "Ver {{count}} proyectos más",
       "hideOthers": "Ocultar proyectos",
+      "videoAlt": "Video de demostración de {{title}}",
+      "videoHint": "Pasa el cursor para ver la demo",
       "items": {
         "cybertracker": {
           "label": "Workspace 3D controlado con gestos",
@@ -131,7 +133,8 @@
           ],
           "code": "https://github.com/JhoselPR/cybertracker",
           "deploy": "https://cybertracker-tau.vercel.app/",
-          "img": "/img/project-card/cybertracker-screen.jpg"
+          "img": "/img/project-card/cybertracker-screen.jpg",
+          "video": "/img/project-card/cybertracker-demo.mp4"
         },
         "clutch-or-cringe": {
           "label": "Generador de roast cards para VALORANT",
