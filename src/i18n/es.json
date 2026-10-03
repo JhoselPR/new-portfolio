@@ -106,166 +106,166 @@
     },
     "projects": {
       "title": "Proyectos",
-      "showMore": "Ver más proyectos",
-      "filtersAll": "Todos",
-      "filtersLabel": "Filtrar proyectos por tecnología",
-      "subtitle": "Una selección de proyectos enfocados en frontend, con foco en design systems, performance y calidad de producto.",
+      "otherTitle": "Otros proyectos",
+      "demo": "Ver demo",
+      "download": "Descargar",
+      "code": "Código",
+      "screenshotAlt": "Captura de {{title}}",
+      "subtitle": "Proyectos personales y académicos donde exploro IA generativa, visión por computadora, 3D y apps fullstack, siempre con foco en la experiencia de usuario.",
       "items": {
-        "1": {
+        "cybertracker": {
           "label": "Workspace 3D controlado con gestos",
           "title": "Cybertracker",
+          "context": "Personal · 2026",
           "description": "Experiencia web que usa la webcam y visión por computadora para manipular objetos 3D con gestos de la mano en tiempo real, sin backend.",
+          "highlight": "Seguimiento de dos manos con MediaPipe, profundidad relativa y rotación 3D con cuaterniones, todo dentro del navegador.",
           "stack": [
             "React",
             "TypeScript",
             "Three.js",
             "MediaPipe",
-            "Computer Vision",
             "Tailwind CSS",
-            "Vite",
-            "Vitest",
-            "Frontend"
+            "Vitest"
           ],
           "code": "https://github.com/JhoselPR/cybertracker",
           "deploy": "https://cybertracker-tau.vercel.app/",
-          "img": "/img/project-card/cybertracker.jpg"
+          "img": "/img/project-card/cybertracker-screen.jpg"
         },
-        "2": {
+        "clutch-or-cringe": {
           "label": "Generador de roast cards para VALORANT",
           "title": "Clutch or Cringe",
+          "context": "Personal · 2026",
           "description": "Web app que analiza estadísticas reales de jugadores de VALORANT y genera roast cards personalizadas con IA.",
+          "highlight": "Funciones serverless en Vercel que combinan estadísticas reales con un LLM (Groq), validadas con Zod y probadas con Vitest.",
           "stack": [
             "React",
             "TypeScript",
-            "Vercel",
+            "Vercel Functions",
             "Groq",
-            "Parse.bot",
-            "REST API",
-            "Generative AI",
-            "Fullstack"
+            "Zod",
+            "Vitest"
           ],
-          "code": "https://github.com/JhoselPR/valo-roaster.git",
+          "code": "https://github.com/JhoselPR/valo-roaster",
           "deploy": "https://valo-roaster.vercel.app/",
-          "img": "/img/project-card/Valo-Roaster.png"
+          "img": "/img/project-card/clutch-or-cringe-screen.jpg"
         },
-        "3": {
+        "domux": {
           "label": "App colaborativa para gestión del hogar",
           "title": "Domux",
-          "description": "PWA fullstack para organizar tareas, gastos compartidos y rutinas del hogar en un solo lugar.",
+          "context": "Personal · 2026",
+          "description": "PWA fullstack para que hogares compartidos coordinen tareas, despensa, gastos y presupuestos en un solo lugar.",
+          "highlight": "Auth con email y Google OAuth en Supabase, roles admin/miembro, invitaciones por código y rutas protegidas.",
           "stack": [
             "React",
             "TypeScript",
-            "Tailwind CSS",
-            "PWA",
+            "Supabase",
             "PostgreSQL",
-            "Fullstack",
-            "Frontend",
-            "SQL"
+            "TanStack Query",
+            "Zustand",
+            "PWA"
           ],
-          "code": "https://github.com/JhoselPR/domux.git",
+          "code": "https://github.com/JhoselPR/domux",
           "deploy": "https://domux.vercel.app/",
-          "img": "/img/project-card/domux-iso.png"
+          "img": "/img/project-card/domux-screen.jpg"
         },
-        "4": {
-          "label": "Plataforma link in bio",
-          "title": "DevTree",
-          "description": "Plataforma fullstack donde desarrolladores pueden compartir proyectos, redes sociales y su presencia online desde un perfil personalizable.",
-          "stack": [
-            "MongoDB",
-            "Express",
-            "React",
-            "Node.js",
-            "TypeScript",
-            "Fullstack",
-            "Frontend",
-            "Backend",
-            "NoSQL"
-          ],
-          "code": "https://github.com/JhoselPR/devtree.git",
-          "deploy": "",
-          "img": "/img/project-card/devtree.jpg"
-        },
-        "7": {
-          "label": "App iOS",
-          "title": "Guess Character",
-          "description": "Aplicación iOS que relaciona la personalidad del usuario con un personaje de Naruto según sus respuestas.",
-          "stack": ["Swift", "iOS"],
-          "code": "https://github.com/JhoselPR/guess-character.git",
-          "deploy": "",
-          "img": "/img/project-card/guess-character.jpg"
-        },
-        "6": {
-          "label": "Videojuego endless runner 3D",
-          "title": "Taxi Runner",
-          "description": "Videojuego desarrollado en Unity inspirado en un taxi recorriendo la CDMX, creado para SODVI con arte voxel y sistema de tienda para skins y potenciadores.",
-          "stack": ["Unity", "C#", "MagicaVoxel", "Voxel Art"],
-          "code": "https://github.com/JhoselPR/TaxiRunner-Chido.git",
-          "deploy": "https://www.mediafire.com/file/7tweu37ryu98dyn/Taxi-Runner.zip/file",
-          "img": "/img/project-card/Taxi-Runner-menu.jpg"
-        },
-        "5": {
+        "raicesmx": {
           "label": "E-commerce",
           "title": "RaícesMX",
-          "description": "Tienda en línea fullstack con frontend en React, backend en Spring Boot, base de datos MySQL e infraestructura desplegada en AWS.",
+          "context": "Bootcamp Generation · 2024",
+          "description": "Tienda en línea de comida mexicana con menú a domicilio, carrito de compras y registro de usuarios.",
+          "highlight": "Proyecto final en equipo bajo Scrum: frontend en React, APIs REST con Spring Boot y MySQL, desplegado en AWS (EC2, S3).",
           "stack": [
             "React",
             "JavaScript",
             "Java",
             "Spring Boot",
             "MySQL",
-            "AWS",
-            "Fullstack",
-            "Frontend",
-            "Backend",
-            "SQL"
+            "AWS"
           ],
-          "code": "https://github.com/JhoselPR/raicesMx-backend.git",
+          "code": "https://github.com/JhoselPR/raicesMx-backend",
           "deploy": "https://raices-mx.vercel.app/",
-          "img": "/img/project-card/raicesmx.jpg"
+          "img": "/img/project-card/raicesmx-screen.jpg"
         },
-        "8": {
-          "label": "Buscador de películas",
-          "title": "Movie Finder",
-          "description": "Web para buscar películas y consultar información detallada usando una API externa.",
-          "stack": ["React", "JavaScript", "External API", "Frontend"],
-          "code": "https://github.com/JhoselPR/MovieFinder.git",
-          "deploy": "https://moviefinder-jhoseldev.netlify.app/",
-          "img": "/img/project-card/movie-finder.jpg"
+        "taxi-runner": {
+          "title": "Taxi Runner",
+          "context": "SODVI · UNAM · 2022",
+          "award": "Mejor videojuego del semestre",
+          "description": "Endless runner 3D en Unity inspirado en un taxi recorriendo la CDMX, con arte voxel y tienda de skins y potenciadores.",
+          "stack": [
+            "Unity",
+            "C#",
+            "MagicaVoxel"
+          ],
+          "code": "https://github.com/JhoselPR/TaxiRunner-Chido",
+          "deploy": "https://www.mediafire.com/file/7tweu37ryu98dyn/Taxi-Runner.zip/file",
+          "download": true,
+          "img": "/img/project-card/Taxi-Runner-menu.jpg"
         },
-        "9": {
-          "label": "Calculadora de escritorio",
-          "title": "Java Calculator",
-          "description": "Calculadora con interfaz gráfica desarrollada completamente en Java.",
-          "stack": ["Java", "GUI"],
-          "code": "https://github.com/JhoselPR/java-calculator.git",
+        "devtree": {
+          "title": "DevTree",
+          "context": "Personal · 2025",
+          "description": "Plataforma link in bio donde desarrolladores comparten proyectos, redes sociales y su presencia online desde un perfil personalizable.",
+          "stack": [
+            "React",
+            "TypeScript",
+            "Node.js",
+            "Express",
+            "MongoDB"
+          ],
+          "code": "https://github.com/JhoselPR/devtree",
           "deploy": "",
-          "img": "/img/calculator.png"
+          "img": "/img/project-card/devtree.jpg"
         },
-        "10": {
-          "label": "Invitación interactiva con votaciones",
+        "guess-character": {
+          "title": "Guess Character",
+          "context": "Personal · 2026",
+          "description": "App iOS que relaciona la personalidad del usuario con un personaje de Naruto según sus respuestas.",
+          "stack": [
+            "Swift",
+            "iOS"
+          ],
+          "code": "https://github.com/JhoselPR/guess-character",
+          "deploy": "",
+          "img": "/img/project-card/guess-character.jpg"
+        },
+        "gen-reveal": {
           "title": "Gen Reveal",
-          "description": "Invitación web para revelación de género con sistema de votación en tiempo real y tabla de resultados para invitados.",
+          "context": "Personal",
+          "description": "Invitación web para revelación de género con votación en tiempo real y tabla de resultados para invitados.",
           "stack": [
             "React",
             "JavaScript",
             "shadcn/ui",
-            "Frontend",
-            "Fullstack",
-            "PostgreSQL",
-            "SQL"
+            "PostgreSQL"
           ],
-          "code": "https://github.com/JhoselPR/gen-reveal.git",
+          "code": "https://github.com/JhoselPR/gen-reveal",
           "deploy": "https://nyjgender-reveal.netlify.app/",
           "img": "/img/project-card/gen-reveal.jpg"
         },
-        "11": {
-          "label": "Landing page para evento",
-          "title": "Andrew's Shower",
-          "description": "Landing page personal para un Baby Shower con temática de Hércules.",
-          "stack": ["React", "TypeScript", "Tailwind CSS", "Frontend"],
-          "code": "https://github.com/JhoselPR/andrews-shower.git",
-          "deploy": "https://babyandrew.netlify.app/",
-          "img": "/img/project-card/baby-shower.jpg"
+        "movie-finder": {
+          "title": "Movie Finder",
+          "context": "Personal · 2025",
+          "description": "Web para buscar películas y consultar información detallada usando una API externa.",
+          "stack": [
+            "React",
+            "JavaScript",
+            "REST API"
+          ],
+          "code": "https://github.com/JhoselPR/MovieFinder",
+          "deploy": "https://moviefinder-jhoseldev.netlify.app/",
+          "img": "/img/project-card/movie-finder.jpg"
+        },
+        "java-calculator": {
+          "title": "Java Calculator",
+          "context": "Personal · 2024",
+          "description": "Calculadora de escritorio con interfaz gráfica desarrollada completamente en Java.",
+          "stack": [
+            "Java",
+            "GUI"
+          ],
+          "code": "https://github.com/JhoselPR/java-calculator",
+          "deploy": "",
+          "img": "/img/calculator.png"
         }
       }
     },

@@ -1,35 +1,36 @@
 export const projects = [
   {
-    key: "1",
+    key: "cybertracker",
     featured: true,
   },
   {
-    key: "2",
-    wide: true,
+    key: "clutch-or-cringe",
+    featured: true,
   },
   {
-    key: "3",
+    key: "domux",
+    featured: true,
   },
   {
-    key: "4",
-    tall: true,
+    key: "raicesmx",
+    featured: true,
   },
   {
-    key: "5",
+    key: "taxi-runner",
   },
   {
-    key: "6",
+    key: "devtree",
   },
   {
-    key: "7",
+    key: "guess-character",
   },
   {
-    key: "8",
+    key: "gen-reveal",
   },
   {
-    key: "9",
+    key: "movie-finder",
   },
   {
-    key: "10",
+    key: "java-calculator",
   },
 ];

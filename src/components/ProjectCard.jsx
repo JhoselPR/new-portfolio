@@ -1,11 +1,15 @@
+import { useTranslation } from "react-i18next";
 import { IoLogoGithub } from "react-icons/io5";
-import { MdOutlineWeb } from "react-icons/md";
+import { MdOutlineWeb, MdDownload } from "react-icons/md";
+import { FaTrophy } from "react-icons/fa";
 
 export default function ProjectCard({ item }) {
-  const hiddenStackItems = ["Frontend", "Backend", "Fullstack", "SQL", "NoSQL"];
+  const { t } = useTranslation();
+  const DeployIcon = item.download ? MdDownload : MdOutlineWeb;
+  const deployLabel = item.download ? t("projects.download") : t("projects.demo");
 
   return (
-    <article className="glass-card cyan-glow group flex h-full min-h-[15rem] overflow-hidden rounded-2xl p-6 transition-all duration-300 hover:border-accent-primary/50! hover:shadow-[0_0_30px_rgba(100,255,218,0.12)]! motion-reduce:transition-none md:p-7">
+    <article className="glass-card cyan-glow group flex h-full flex-col overflow-hidden rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent-primary/50! hover:shadow-[0_0_30px_rgba(100,255,218,0.12)]! motion-reduce:transition-none motion-reduce:hover:translate-y-0">
       {item.img ? (
         <div className="absolute inset-0 z-0 overflow-hidden rounded-[inherit]">
           <img
@@ -22,19 +26,19 @@ export default function ProjectCard({ item }) {
       ) : null}
 
       <div className="relative z-10 flex flex-1 flex-col">
-        <div className="flex justify-between gap-4 items-center">
-          <p className="text-xs font-mono text-accent-primary uppercase tracking-widest">
-            {item.label}
-          </p>
-          <div className="flex gap-3 items-center text-accent-primary">
+        <div className="flex items-center justify-between gap-4">
+          <p className="text-xs font-mono text-text-muted">{item.context}</p>
+          <div className="flex items-center gap-3 text-text-secondary">
             {item.deploy && (
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href={item.deploy}
-                className="hover:scale-105 hover:text-accent-hover focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-primary"
+                aria-label={`${deployLabel}: ${item.title}`}
+                title={deployLabel}
+                className="hover:scale-105 hover:text-accent-primary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-primary"
               >
-                <MdOutlineWeb size={22} />
+                <DeployIcon size={21} />
               </a>
             )}
             {item.code && (
@@ -42,38 +46,40 @@ export default function ProjectCard({ item }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 href={item.code}
-                className="hover:scale-110 hover:text-accent-hover focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-primary"
+                aria-label={`${t("projects.code")}: ${item.title}`}
+                title={t("projects.code")}
+                className="hover:scale-110 hover:text-accent-primary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-primary"
               >
-                <IoLogoGithub size={21} />
+                <IoLogoGithub size={20} />
               </a>
             )}
           </div>
         </div>
 
-        <h3 className="text-xl md:text-2xl font-title mt-3">{item.title}</h3>
-        <p className="text-text-secondary mt-4 leading-relaxed">
+        <h4 className="mt-3 text-lg font-title transition-colors duration-300 group-hover:text-accent-primary md:text-xl">
+          {item.title}
+        </h4>
+
+        {item.award && (
+          <p className="mt-2 inline-flex w-fit items-center gap-1.5 rounded-full border border-accent-primary/30 bg-accent-primary/10 px-2.5 py-1 text-xs font-mono text-accent-primary">
+            <FaTrophy aria-hidden="true" size={11} />
+            {item.award}
+          </p>
+        )}
+
+        <p className="mt-3 text-sm leading-relaxed text-text-secondary">
           {item.description}
         </p>
 
-        <div className="mt-auto pt-6 flex flex-wrap gap-2">
-          {/* {item.stack.map((tech) => (
+        <div className="mt-auto flex flex-wrap gap-2 pt-5">
+          {item.stack.map((tech) => (
             <span
               key={tech}
-              className="text-xs font-mono text-text-muted border border-border-stealth rounded-md bg-bg-primary/20 px-2 py-1 backdrop-blur-sm"
+              className="rounded-md border border-border-stealth bg-bg-primary/20 px-2 py-1 text-xs font-mono text-text-muted"
             >
               {tech}
             </span>
-          ))} */}
-          {item.stack
-            .filter((tech) => !hiddenStackItems.includes(tech))
-            .map((tech) => (
-              <span
-                key={tech}
-                className="text-xs font-mono text-text-muted border border-border-stealth rounded-md bg-bg-primary/20 px-2 py-1 backdrop-blur-sm"
-              >
-                {tech}
-              </span>
-            ))}
+          ))}
         </div>
       </div>
     </article>
